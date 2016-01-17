@@ -12,7 +12,8 @@ var getPlugins = function(env) {
 
   var plugins = [
     new webpack.optimize.OccurenceOrderPlugin(),
-    new webpack.DefinePlugin(GLOBALS) //Tells React to build in prod mode. https://facebook.github.io/react/downloads.html
+    new webpack.DefinePlugin(GLOBALS), //Tells React to build in prod mode. https://facebook.github.io/react/downloads.html,
+    new webpack.ProvidePlugin({ $: "jquery", jQuery: "jquery" })
   ];
 
   switch(env) {
@@ -32,7 +33,16 @@ var getPlugins = function(env) {
 var getLoaders = function(env) {
   var loaders = [
     { test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel', 'eslint'] },
-    { test: /(\.css|\.scss)$/, include: path.join(__dirname, 'src'), loaders: ['style', 'css', 'sass'] }
+    { test: /(\.css|\.scss)$/, include: path.join(__dirname, 'src'), loaders: ['style', 'css', 'sass'] },
+    // React is necessary for the client rendering
+{ test: require.resolve('react'), loader: 'expose?React' },
+{ test: require.resolve('react-dom'), loader: 'expose?ReactDOM' },
+{ test: require.resolve('jquery'), loader: 'expose?jQuery' },
+{ test: require.resolve('jquery'), loader: 'expose?$' },
+    { test: /vendor\/.+\.(jsx|js)$/,loader: 'imports?jQuery=jquery,$=jquery,this=>window'},
+    { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
+    { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
+    { test: /\.(png|woff|woff2|eot|ttf|svg|gif|jpg|cur|otf)$/, loader: 'url-loader?limit=100000' }
   ];
 
   return loaders;

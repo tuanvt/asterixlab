@@ -1,31 +1,38 @@
-/* Variables */
-$vin-blue: #5bb7db;
-$vin-green: #60b044;
-$vin-red: #ff0000;
+/* Logo */
+#logo {
 
-/* Styles */
-body {
-  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.4em;
-  color: #4d4d4d;
-  min-width: 230px;
-  max-width: 550px;
+  height: 45px;
   margin: 0 auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  font-weight: 300;
+  display:inline;;
+  fill: #e5c45c;
+  fill: url("#MyGradient");
+  stroke: #e5c45c;
+  stroke-miterlimit: 50;
+ }
+.animate-draw {
+  fill-opacity: 0;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation: DrawLine 1000ms linear infinite,FadeStroke 4000ms linear infinite,FillIn 4000ms linear infinite;
 }
 
-td {
-	padding: 12px;
+#draw-text {
+  animation-delay: 2s, 3.5s, 3.5s;
+  animation-duration: 2s, 3s, 3s;
+  animation-duration:5s;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+ }
+
+@keyframes DrawLine {
+  to { stroke-dashOffset: 100; }
 }
 
-h2 {
-	color: $vin-blue;
+@keyframes FadeStroke {
+  to { stroke-opacity: .3; }
 }
 
-.savings { color: $vin-green; }
-.loss { color: $vin-red; }
-input.small { width: 46px; }
-td.fuel-savings-label { width: 175px; }
+@keyframes FillIn {
+  from { fill-opacity: 0; }
+  to { fill-opacity: 1; }
+}

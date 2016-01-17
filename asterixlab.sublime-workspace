@@ -1,0 +1,813 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"con",
+				"controllerAs"
+			],
+			[
+				"cont",
+				"controller"
+			],
+			[
+				"p",
+				"pages"
+			],
+			[
+				"sto",
+				"stories"
+			],
+			[
+				"creat",
+				"createToken〔class〕"
+			],
+			[
+				"val",
+				"validPassword〔variable〕"
+			],
+			[
+				"s",
+				"submit"
+			],
+			[
+				"t",
+				"type	Attr"
+			],
+			[
+				"user",
+				"userFactory〔variable〕"
+			],
+			[
+				"na",
+				"navbar"
+			],
+			[
+				"au",
+				"authFactory"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"inter",
+				"interceptorFactory〔variable〕"
+			],
+			[
+				"Aut",
+				"AuthToken"
+			],
+			[
+				"Au",
+				"AuthToken"
+			],
+			[
+				"Auth",
+				"AuthToken〔argument〕"
+			],
+			[
+				"b",
+				"bodyParser"
+			],
+			[
+				"bod",
+				"bodyParser〔variable〕"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"Sto",
+				"StorySchema〔variable〕"
+			],
+			[
+				"se",
+				"secretKey"
+			],
+			[
+				"super",
+				"superSecret〔variable〕"
+			],
+			[
+				"json",
+				"jsonwebtoken〔variable〕"
+			],
+			[
+				"crea",
+				"createToken〔class〕"
+			],
+			[
+				"ex",
+				"express"
+			],
+			[
+				"Us",
+				"UserSchema"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 99,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 2225,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "import React, {PropTypes} from 'react';\n\n\nclass LandingPage extends React.Component {\n  constructor(props) {\n    super(props);\n    }\n",
+			"file": "src/components/LandingPage.js",
+			"file_size": 147,
+			"file_write_time": 130973280110000000,
+			"settings":
+			{
+				"buffer_size": 133,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "webpack.config.js",
+			"settings":
+			{
+				"buffer_size": 2317,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/royal_preloader.js",
+			"settings":
+			{
+				"buffer_size": 12501,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/plugins.js",
+			"settings":
+			{
+				"buffer_size": 134428,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/animsition.js",
+			"settings":
+			{
+				"buffer_size": 11815,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vendor/script.js",
+			"settings":
+			{
+				"buffer_size": 8706,
+				"line_ending": "Unix",
+				"name": "/**"
+			}
+		},
+		{
+			"contents": "! function(t) {\n    function e(i) {\n        if (n[i]) return n[i].exports;\n        var o = n[i] = {\n            exports: {},\n            id: i,\n            loaded: !1\n        };\n        return t[i].call(o.exports, o, o.exports, e), o.loaded = !0, o.exports\n    }\n    var n = {};\n    return e.m = t, e.c = n, e.p = \"/\", e(0)\n}([function(t, e, n) {\n    n(4), n(5), n(6), n(7), n(8), n(9), n(1), n(10), n(11), n(12), n(13), n(14), n(15), n(16), t.exports = n(17)\n}, function(t, e, n) {\n    \"use strict\";\n\n    function i(t) {\n        d.env() && (y(t.design) && v.on(\"__wf_design\", t.design), y(t.preview) && v.on(\"__wf_preview\", t.preview)), y(t.destroy) && v.on(\"__wf_destroy\", t.destroy), t.ready && y(t.ready) && o(t)\n    }\n\n    function o(t) {\n        return b ? void t.ready() : void(w.contains(f, t.ready) || f.push(t.ready))\n    }\n\n    function r(t) {\n        y(t.design) && v.off(\"__wf_design\", t.design), y(t.preview) && v.off(\"__wf_preview\", t.preview), y(t.destroy) && v.off(\"__wf_destroy\", t.destroy), t.ready && y(t.ready) && a(t)\n    }\n\n    function a(t) {\n        f = w.filter(f, function(e) {\n            return e !== t.ready\n        })\n    }\n\n    function s(t, e) {\n        var n = [],\n            i = {};\n        return i.up = w.throttle(function(t) {\n            w.each(n, function(e) {\n                e(t)\n            })\n        }), t && e && t.on(e, i.up), i.on = function(t) {\n            \"function\" == typeof t && (w.contains(n, t) || n.push(t))\n        }, i.off = function(t) {\n            return arguments.length ? void(n = w.filter(n, function(e) {\n                return e !== t\n            })) : void(n = [])\n        }, i\n    }\n\n    function c(t) {\n        y(t) && t()\n    }\n\n    function u() {\n        k = !1, w.each(p, i)\n    }\n\n    function l() {\n        M && (M.reject(), v.off(\"load\", M.resolve)), M = new m.Deferred, v.on(\"load\", M.resolve)\n    }\n    var d = {},\n        p = {},\n        f = [],\n        h = window.moutheme || [],\n        m = window.jQuery,\n        v = m(window),\n        g = m(document),\n        y = m.isFunction,\n        w = d._ = n(18),\n        x = n(3) && m.tram,\n        b = !1,\n        k = !1,\n        _ = window.Modernizr;\n    x.config.hideBackface = !1, x.config.keepInherited = !0, d.define = function(t, e, n) {\n        p[t] && r(p[t]);\n        var o = p[t] = e(m, w, n) || {};\n        return i(o), o\n    }, d.require = function(t) {\n        return p[t]\n    }, d.push = function(t) {\n        return b ? void(y(t) && t()) : void h.push(t)\n    }, d.env = function(t) {\n        var e = window.__wf_design,\n            n = \"undefined\" != typeof e;\n        return t ? \"design\" === t ? n && e : \"preview\" === t ? n && !e : \"slug\" === t ? n && window.__wf_slug : \"editor\" === t ? window.mouthemeEditor : \"test\" === t ? window.__wf_test : \"frame\" === t ? window !== window.top : void 0 : n\n    };\n    var A = navigator.userAgent.toLowerCase(),\n        T = navigator.appVersion.toLowerCase(),\n        B = d.env.touch = \"ontouchstart\" in window || window.DocumentTouch && document instanceof window.DocumentTouch,\n        z = d.env.chrome = /chrome/.test(A) && /Google/.test(navigator.vendor) && parseInt(T.match(/chrome\\/(\\d+)\\./)[1], 10),\n        O = d.env.ios = _ && _.ios;\n    d.env.safari = /safari/.test(A) && !z && !O;\n    var C;\n    B && g.on(\"touchstart mousedown\", function(t) {\n        C = t.target\n    }), d.validClick = B ? function(t) {\n        return t === C || m.contains(t, C)\n    } : function() {\n        return !0\n    };\n    var L = \"resize.moutheme orientationchange.moutheme load.moutheme\",\n        E = \"scroll.moutheme \" + L;\n    if (d.resize = s(v, L), d.scroll = s(v, E), d.redraw = s(), d.location = function(t) {\n            window.location = t\n        }, d.app = d.env() ? {} : null, d.app) {\n        var j = new Event(\"__wf_redraw\");\n        d.app.redrawElement = function(t, e) {\n            e.dispatchEvent(j)\n        }, d.location = function(t) {\n            window.dispatchEvent(new CustomEvent(\"__wf_location\", {\n                detail: t\n            }))\n        }\n    }\n    d.ready = function() {\n        b = !0, k ? u() : w.each(f, c), w.each(h, c), d.resize.up()\n    };\n    var M;\n    d.load = function(t) {\n        M.then(t)\n    }, d.destroy = function(t) {\n        t = t || {}, k = !0, v.triggerHandler(\"__wf_destroy\"), null != t.domready && (b = t.domready), w.each(p, r), d.resize.off(), d.scroll.off(), d.redraw.off(), f = [], h = [], \"pending\" === M.state() && l()\n    }, m(d.ready), l(), t.exports = window.moutheme = d\n}, function(t, e) {\n    \"use strict\";\n    var n = window.jQuery,\n        i = {},\n        o = [],\n        r = \".w-ix\",\n        a = {\n            reset: function(t, e) {\n                e.__wf_intro = null\n            },\n            intro: function(t, e) {\n                e.__wf_intro || (e.__wf_intro = !0, n(e).triggerHandler(i.types.INTRO))\n            },\n            outro: function(t, e) {\n                e.__wf_intro && (e.__wf_intro = null, n(e).triggerHandler(i.types.OUTRO))\n            }\n        };\n    i.triggers = {}, i.types = {\n        INTRO: \"w-ix-intro\" + r,\n        OUTRO: \"w-ix-outro\" + r\n    }, i.init = function() {\n        for (var t = o.length, e = 0; t > e; e++) {\n            var r = o[e];\n            r[0](0, r[1])\n        }\n        o = [], n.extend(i.triggers, a)\n    }, i.async = function() {\n        for (var t in a) {\n            var e = a[t];\n            a.hasOwnProperty(t) && (i.triggers[t] = function(t, n) {\n                o.push([e, n])\n            })\n        }\n    }, i.async(), t.exports = i\n}, function(t, e) {\n    window.tram = function(t) {\n        function e(t, e) {\n            var n = new S.Bare;\n            return n.init(t, e)\n        }\n\n        function n(t) {\n            return t.replace(/[A-Z]/g, function(t) {\n                return \"-\" + t.toLowerCase()\n            })\n        }\n\n        function i(t) {\n            var e = parseInt(t.slice(1), 16),\n                n = e >> 16 & 255,\n                i = e >> 8 & 255,\n                o = 255 & e;\n            return [n, i, o]\n        }\n\n        function o(t, e, n) {\n            return \"#\" + (1 << 24 | t << 16 | e << 8 | n).toString(16).slice(1)\n        }\n\n        function r() {}\n\n        function a(t, e) {\n            K(\"Type warning: Expected: [\" + t + \"] Got: [\" + typeof e + \"] \" + e)\n        }\n\n        function s(t, e, n) {\n            K(\"Units do not match [\" + t + \"]: \" + e + \", \" + n)\n        }\n\n        function c(t, e, n) {\n            if (void 0 !== e && (n = e), void 0 === t) return n;\n            var i = n;\n            return J.test(t) || !V.test(t) ? i = parseInt(t, 10) : V.test(t) && (i = 1e3 * parseFloat(t)), 0 > i && (i = 0), i === i ? i : n\n        }\n\n        function u(t) {\n            for (var e = -1, n = t ? t.length : 0, i = []; ++e < n;) {\n                var o = t[e];\n                o && i.push(o)\n            }\n            return i\n        }\n        var l = function(t, e, n) {\n                function i(t) {\n                    return \"object\" == typeof t\n                }\n\n                function o(t) {\n                    return \"function\" == typeof t\n                }\n\n                function r() {}\n\n                function a(s, c) {\n                    function u() {\n                        var t = new l;\n                        return o(t.init) && t.init.apply(t, arguments), t\n                    }\n\n                    function l() {}\n                    c === n && (c = s, s = Object), u.Bare = l;\n                    var d, p = r[t] = s[t],\n                        f = l[t] = u[t] = new r;\n                    return f.constructor = u, u.mixin = function(e) {\n                        return l[t] = u[t] = a(u, e)[t], u\n                    }, u.open = function(t) {\n                        if (d = {}, o(t) ? d = t.call(u, f, p, u, s) : i(t) && (d = t), i(d))\n                            for (var n in d) e.call(d, n) && (f[n] = d[n]);\n                        return o(f.init) || (f.init = s), u\n                    }, u.open(c)\n                }\n                return a\n            }(\"prototype\", {}.hasOwnProperty),\n            d = {\n                ease: [\"ease\", function(t, e, n, i) {\n                    var o = (t /= i) * t,\n                        r = o * t;\n                    return e + n * (-2.75 * r * o + 11 * o * o + -15.5 * r + 8 * o + .25 * t)\n                }],\n                \"ease-in\": [\"ease-in\", function(t, e, n, i) {\n                    var o = (t /= i) * t,\n                        r = o * t;\n                    return e + n * (-1 * r * o + 3 * o * o + -3 * r + 2 * o)\n                }],\n                \"ease-out\": [\"ease-out\", function(t, e, n, i) {\n                    var o = (t /= i) * t,\n                        r = o * t;\n                    return e + n * (.3 * r * o + -1.6 * o * o + 2.2 * r + -1.8 * o + 1.9 * t)\n                }],\n                \"ease-in-out\": [\"ease-in-out\", function(t, e, n, i) {\n                    var o = (t /= i) * t,\n                        r = o * t;\n                    return e + n * (2 * r * o + -5 * o * o + 2 * r + 2 * o)\n                }],\n                linear: [\"linear\", function(t, e, n, i) {\n                    return n * t / i + e\n                }],\n                \"ease-in-quad\": [\"cubic-bezier(0.550, 0.085, 0.680, 0.530)\", function(t, e, n, i) {\n                    return n * (t /= i) * t + e\n                }],\n                \"ease-out-quad\": [\"cubic-bezier(0.250, 0.460, 0.450, 0.940)\", function(t, e, n, i) {\n                    return -n * (t /= i) * (t - 2) + e\n                }],\n                \"ease-in-out-quad\": [\"cubic-bezier(0.455, 0.030, 0.515, 0.955)\", function(t, e, n, i) {\n                    return (t /= i / 2) < 1 ? n / 2 * t * t + e : -n / 2 * (--t * (t - 2) - 1) + e\n                }],\n                \"ease-in-cubic\": [\"cubic-bezier(0.550, 0.055, 0.675, 0.190)\", function(t, e, n, i) {\n                    return n * (t /= i) * t * t + e\n                }],\n                \"ease-out-cubic\": [\"cubic-bezier(0.215, 0.610, 0.355, 1)\", function(t, e, n, i) {\n                    return n * ((t = t / i - 1) * t * t + 1) + e\n                }],\n                \"ease-in-out-cubic\": [\"cubic-bezier(0.645, 0.045, 0.355, 1)\", function(t, e, n, i) {\n                    return (t /= i / 2) < 1 ? n / 2 * t * t * t + e : n / 2 * ((t -= 2) * t * t + 2) + e\n                }],\n                \"ease-in-quart\": [\"cubic-bezier(0.895, 0.030, 0.685, 0.220)\", function(t, e, n, i) {\n                    return n * (t /= i) * t * t * t + e\n                }],\n                \"ease-out-quart\": [\"cubic-bezier(0.165, 0.840, 0.440, 1)\", function(t, e, n, i) {\n                    return -n * ((t = t / i - 1) * t * t * t - 1) + e\n                }],\n                \"ease-in-out-quart\": [\"cubic-bezier(0.770, 0, 0.175, 1)\", function(t, e, n, i) {\n                    return (t /= i / 2) < 1 ? n / 2 * t * t * t * t + e : -n / 2 * ((t -= 2) * t * t * t - 2) + e\n                }],\n                \"ease-in-quint\": [\"cubic-bezier(0.755, 0.050, 0.855, 0.060)\", function(t, e, n, i) {\n                    return n * (t /= i) * t * t * t * t + e\n                }],\n                \"ease-out-quint\": [\"cubic-bezier(0.230, 1, 0.320, 1)\", function(t, e, n, i) {\n                    return n * ((t = t / i - 1) * t * t * t * t + 1) + e\n                }],\n                \"ease-in-out-quint\": [\"cubic-bezier(0.860, 0, 0.070, 1)\", function(t, e, n, i) {\n                    return (t /= i / 2) < 1 ? n / 2 * t * t * t * t * t + e : n / 2 * ((t -= 2) * t * t * t * t + 2) + e\n                }],\n                \"ease-in-sine\": [\"cubic-bezier(0.470, 0, 0.745, 0.715)\", function(t, e, n, i) {\n                    return -n * Math.cos(t / i * (Math.PI / 2)) + n + e\n                }],\n                \"ease-out-sine\": [\"cubic-bezier(0.390, 0.575, 0.565, 1)\", function(t, e, n, i) {\n                    return n * Math.sin(t / i * (Math.PI / 2)) + e\n                }],\n                \"ease-in-out-sine\": [\"cubic-bezier(0.445, 0.050, 0.550, 0.950)\", function(t, e, n, i) {\n                    return -n / 2 * (Math.cos(Math.PI * t / i) - 1) + e\n                }],\n                \"ease-in-expo\": [\"cubic-bezier(0.950, 0.050, 0.795, 0.035)\", function(t, e, n, i) {\n                    return 0 === t ? e : n * Math.pow(2, 10 * (t / i - 1)) + e\n                }],\n                \"ease-out-expo\": [\"cubic-bezier(0.190, 1, 0.220, 1)\", function(t, e, n, i) {\n                    return t === i ? e + n : n * (-Math.pow(2, -10 * t / i) + 1) + e\n                }],\n                \"ease-in-out-expo\": [\"cubic-bezier(1, 0, 0, 1)\", function(t, e, n, i) {\n                    return 0 === t ? e : t === i ? e + n : (t /= i / 2) < 1 ? n / 2 * Math.pow(2, 10 * (t - 1)) + e : n / 2 * (-Math.pow(2, -10 * --t) + 2) + e\n                }],\n                \"ease-in-circ\": [\"cubic-bezier(0.600, 0.040, 0.980, 0.335)\", function(t, e, n, i) {\n                    return -n * (Math.sqrt(1 - (t /= i) * t) - 1) + e\n                }],\n                \"ease-out-circ\": [\"cubic-bezier(0.075, 0.820, 0.165, 1)\", function(t, e, n, i) {\n                    return n * Math.sqrt(1 - (t = t / i - 1) * t) + e\n                }],\n                \"ease-in-out-circ\": [\"cubic-bezier(0.785, 0.135, 0.150, 0.860)\", function(t, e, n, i) {\n                    return (t /= i / 2) < 1 ? -n / 2 * (Math.sqrt(1 - t * t) - 1) + e : n / 2 * (Math.sqrt(1 - (t -= 2) * t) + 1) + e\n                }],\n                \"ease-in-back\": [\"cubic-bezier(0.600, -0.280, 0.735, 0.045)\", function(t, e, n, i, o) {\n                    return void 0 === o && (o = 1.70158), n * (t /= i) * t * ((o + 1) * t - o) + e\n                }],\n                \"ease-out-back\": [\"cubic-bezier(0.175, 0.885, 0.320, 1.275)\", function(t, e, n, i, o) {\n                    return void 0 === o && (o = 1.70158), n * ((t = t / i - 1) * t * ((o + 1) * t + o) + 1) + e\n                }],\n                \"ease-in-out-back\": [\"cubic-bezier(0.680, -0.550, 0.265, 1.550)\", function(t, e, n, i, o) {\n                    return void 0 === o && (o = 1.70158), (t /= i / 2) < 1 ? n / 2 * t * t * (((o *= 1.525) + 1) * t - o) + e : n / 2 * ((t -= 2) * t * (((o *= 1.525) + 1) * t + o) + 2) + e\n                }]\n            },\n            p = {\n                \"ease-in-back\": \"cubic-bezier(0.600, 0, 0.735, 0.045)\",\n                \"ease-out-back\": \"cubic-bezier(0.175, 0.885, 0.320, 1)\",\n                \"ease-in-out-back\": \"cubic-bezier(0.680, 0, 0.265, 1)\"\n            },\n            f = document,\n            h = window,\n            m = \"bkwld-tram\",\n            v = /[\\-\\.0-9]/g,\n            g = /[A-Z]/,\n            y = \"number\",\n            w = /^(rgb|#)/,\n            x = /(em|cm|mm|in|pt|pc|px)$/,\n            b = /(em|cm|mm|in|pt|pc|px|%)$/,\n            k = /(deg|rad|turn)$/,\n            _ = \"unitless\",\n            A = /(all|none) 0s ease 0s/,\n            T = /^(width|height)$/,\n            B = \" \",\n            z = f.createElement(\"a\"),\n            O = [\"Webkit\", \"Moz\", \"O\", \"ms\"],\n            C = [\"-webkit-\", \"-moz-\", \"-o-\", \"-ms-\"],\n            L = function(t) {\n                if (t in z.style) return {\n                    dom: t,\n                    css: t\n                };\n                var e, n, i = \"\",\n                    o = t.split(\"-\");\n                for (e = 0; e < o.length; e++) i += o[e].charAt(0).toUpperCase() + o[e].slice(1);\n                for (e = 0; e < O.length; e++)\n                    if (n = O[e] + i, n in z.style) return {\n                        dom: n,\n                        css: C[e] + t\n                    }\n            },\n            E = e.support = {\n                bind: Function.prototype.bind,\n                transform: L(\"transform\"),\n                transition: L(\"transition\"),\n                backface: L(\"backface-visibility\"),\n                timing: L(\"transition-timing-function\")\n            };\n        if (E.transition) {\n            var j = E.timing.dom;\n            if (z.style[j] = d[\"ease-in-back\"][0], !z.style[j])\n                for (var M in p) d[M][0] = p[M]\n        }\n        var I = e.frame = function() {\n                var t = h.requestAnimationFrame || h.webkitRequestAnimationFrame || h.mozRequestAnimationFrame || h.oRequestAnimationFrame || h.msRequestAnimationFrame;\n                return t && E.bind ? t.bind(h) : function(t) {\n                    h.setTimeout(t, 16)\n                }\n            }(),\n            q = e.now = function() {\n                var t = h.performance,\n                    e = t && (t.now || t.webkitNow || t.msNow || t.mozNow);\n                return e && E.bind ? e.bind(t) : Date.now || function() {\n                    return +new Date\n                }\n            }(),\n            $ = l(function(e) {\n                function i(t, e) {\n                    var n = u((\"\" + t).split(B)),\n                        i = n[0];\n                    e = e || {};\n                    var o = Y[i];\n                    if (!o) return K(\"Unsupported property: \" + i);\n                    if (!e.weak || !this.props[i]) {\n                        var r = o[0],\n                            a = this.props[i];\n                        return a || (a = this.props[i] = new r.Bare), a.init(this.$el, n, o, e), a\n                    }\n                }\n\n                function o(t, e, n) {\n                    if (t) {\n                        var o = typeof t;\n                        if (e || (this.timer && this.timer.destroy(), this.queue = [], this.active = !1), \"number\" == o && e) return this.timer = new X({\n                            duration: t,\n                            context: this,\n                            complete: s\n                        }), void(this.active = !0);\n                        if (\"string\" == o && e) {\n                            switch (t) {\n                                case \"hide\":\n                                    f.call(this);\n                                    break;\n                                case \"stop\":\n                                    l.call(this);\n                                    break;\n                                case \"redraw\":\n                                    h.call(this);\n                                    break;\n                                default:\n                                    i.call(this, t, n && n[1])\n                            }\n                            return s.call(this)\n                        }\n                        if (\"function\" == o) return void t.call(this, this);\n                        if (\"object\" == o) {\n                            var r = 0;\n                            w.call(this, t, function(t, e) {\n                                t.span > r && (r = t.span), t.stop(), t.animate(e)\n                            }, function(t) {\n                                \"wait\" in t && (r = c(t.wait, 0))\n                            }), y.call(this), r > 0 && (this.timer = new X({\n                                duration: r,\n                                context: this\n                            }), this.active = !0, e && (this.timer.complete = s));\n                            var a = this,\n                                u = !1,\n                                d = {};\n                            I(function() {\n                                w.call(a, t, function(t) {\n                                    t.active && (u = !0, d[t.name] = t.nextStyle)\n                                }), u && a.$el.css(d)\n                            })\n                        }\n                    }\n                }\n\n                function r(t) {\n                    t = c(t, 0), this.active ? this.queue.push({\n                        options: t\n                    }) : (this.timer = new X({\n                        duration: t,\n                        context: this,\n                        complete: s\n                    }), this.active = !0)\n                }\n\n                function a(t) {\n                    return this.active ? (this.queue.push({\n                        options: t,\n                        args: arguments\n                    }), void(this.timer.complete = s)) : K(\"No active transition timer. Use start() or wait() before then().\")\n                }\n\n                function s() {\n                    if (this.timer && this.timer.destroy(), this.active = !1, this.queue.length) {\n                        var t = this.queue.shift();\n                        o.call(this, t.options, !0, t.args)\n                    }\n                }\n\n                function l(t) {\n                    this.timer && this.timer.destroy(), this.queue = [], this.active = !1;\n                    var e;\n                    \"string\" == typeof t ? (e = {}, e[t] = 1) : e = \"object\" == typeof t && null != t ? t : this.props, w.call(this, e, x), y.call(this)\n                }\n\n                function d(t) {\n                    l.call(this, t), w.call(this, t, b, k)\n                }\n\n                function p(t) {\n                    \"string\" != typeof t && (t = \"block\"), this.el.style.display = t\n                }\n\n                function f() {\n                    l.call(this), this.el.style.display = \"none\"\n                }\n\n                function h() {\n                    this.el.offsetHeight\n                }\n\n                function v() {\n                    l.call(this), t.removeData(this.el, m), this.$el = this.el = null\n                }\n\n                function y() {\n                    var t, e, n = [];\n                    this.upstream && n.push(this.upstream);\n                    for (t in this.props) e = this.props[t], e.active && n.push(e.string);\n                    n = n.join(\",\"), this.style !== n && (this.style = n, this.el.style[E.transition.dom] = n)\n                }\n\n                function w(t, e, o) {\n                    var r, a, s, c, u = e !== x,\n                        l = {};\n                    for (r in t) s = t[r], r in Q ? (l.transform || (l.transform = {}), l.transform[r] = s) : (g.test(r) && (r = n(r)), r in Y ? l[r] = s : (c || (c = {}), c[r] = s));\n                    for (r in l) {\n                        if (s = l[r], a = this.props[r], !a) {\n                            if (!u) continue;\n                            a = i.call(this, r)\n                        }\n                        e.call(this, a, s)\n                    }\n                    o && c && o.call(this, c)\n                }\n\n                function x(t) {\n                    t.stop()\n                }\n\n                function b(t, e) {\n                    t.set(e)\n                }\n\n                function k(t) {\n                    this.$el.css(t)\n                }\n\n                function _(t, n) {\n                    e[t] = function() {\n                        return this.children ? T.call(this, n, arguments) : (this.el && n.apply(this, arguments), this)\n                    }\n                }\n\n                function T(t, e) {\n                    var n, i = this.children.length;\n                    for (n = 0; i > n; n++) t.apply(this.children[n], e);\n                    return this\n                }\n                e.init = function(e) {\n                    if (this.$el = t(e), this.el = this.$el[0], this.props = {}, this.queue = [], this.style = \"\", this.active = !1, W.keepInherited && !W.fallback) {\n                        var n = Z(this.el, \"transition\");\n                        n && !A.test(n) && (this.upstream = n)\n                    }\n                    E.backface && W.hideBackface && U(this.el, E.backface.css, \"hidden\")\n                }, _(\"add\", i), _(\"start\", o), _(\"wait\", r), _(\"then\", a), _(\"next\", s), _(\"stop\", l), _(\"set\", d), _(\"show\", p), _(\"hide\", f), _(\"redraw\", h), _(\"destroy\", v)\n            }),\n            S = l($, function(e) {\n                function n(e, n) {\n                    var i = t.data(e, m) || t.data(e, m, new $.Bare);\n                    return i.el || i.init(e), n ? i.start(n) : i\n                }\n                e.init = function(e, i) {\n                    var o = t(e);\n                    if (!o.length) return this;\n                    if (1 === o.length) return n(o[0], i);\n                    var r = [];\n                    return o.each(function(t, e) {\n                        r.push(n(e, i))\n                    }), this.children = r, this\n                }\n            }),\n            D = l(function(t) {\n                function e() {\n                    var t = this.get();\n                    this.update(\"auto\");\n                    var e = this.get();\n                    return this.update(t), e\n                }\n\n                function n(t, e, n) {\n                    return void 0 !== e && (n = e), t in d ? t : n\n                }\n\n                function i(t) {\n                    var e = /rgba?\\((\\d+),\\s*(\\d+),\\s*(\\d+)/.exec(t);\n                    return (e ? o(e[1], e[2], e[3]) : t).replace(/#(\\w)(\\w)(\\w)$/, \"#$1$1$2$2$3$3\")\n                }\n                var r = {\n                    duration: 500,\n                    ease: \"ease\",\n                    delay: 0\n                };\n                t.init = function(t, e, i, o) {\n                    this.$el = t, this.el = t[0];\n                    var a = e[0];\n                    i[2] && (a = i[2]), G[a] && (a = G[a]), this.name = a, this.type = i[1], this.duration = c(e[1], this.duration, r.duration), this.ease = n(e[2], this.ease, r.ease), this.delay = c(e[3], this.delay, r.delay), this.span = this.duration + this.delay, this.active = !1, this.nextStyle = null, this.auto = T.test(this.name), this.unit = o.unit || this.unit || W.defaultUnit, this.angle = o.angle || this.angle || W.defaultAngle, W.fallback || o.fallback ? this.animate = this.fallback : (this.animate = this.transition, this.string = this.name + B + this.duration + \"ms\" + (\"ease\" != this.ease ? B + d[this.ease][0] : \"\") + (this.delay ? B + this.delay + \"ms\" : \"\"))\n                }, t.set = function(t) {\n                    t = this.convert(t, this.type), this.update(t), this.redraw()\n                }, t.transition = function(t) {\n                    this.active = !0, t = this.convert(t, this.type), this.auto && (\"auto\" == this.el.style[this.name] && (this.update(this.get()), this.redraw()), \"auto\" == t && (t = e.call(this))), this.nextStyle = t\n                }, t.fallback = function(t) {\n                    var n = this.el.style[this.name] || this.convert(this.get(), this.type);\n                    t = this.convert(t, this.type), this.auto && (\"auto\" == n && (n = this.convert(this.get(), this.type)), \"auto\" == t && (t = e.call(this))), this.tween = new N({\n                        from: n,\n                        to: t,\n                        duration: this.duration,\n                        delay: this.delay,\n                        ease: this.ease,\n                        update: this.update,\n                        context: this\n                    })\n                }, t.get = function() {\n                    return Z(this.el, this.name)\n                }, t.update = function(t) {\n                    U(this.el, this.name, t)\n                }, t.stop = function() {\n                    (this.active || this.nextStyle) && (this.active = !1, this.nextStyle = null, U(this.el, this.name, this.get()));\n                    var t = this.tween;\n                    t && t.context && t.destroy()\n                }, t.convert = function(t, e) {\n                    if (\"auto\" == t && this.auto) return t;\n                    var n, o = \"number\" == typeof t,\n                        r = \"string\" == typeof t;\n                    switch (e) {\n                        case y:\n                            if (o) return t;\n                            if (r && \"\" === t.replace(v, \"\")) return +t;\n                            n = \"number(unitless)\";\n                            break;\n                        case w:\n                            if (r) {\n                                if (\"\" === t && this.original) return this.original;\n                                if (e.test(t)) return \"#\" == t.charAt(0) && 7 == t.length ? t : i(t)\n                            }\n                            n = \"hex or rgb string\";\n                            break;\n                        case x:\n                            if (o) return t + this.unit;\n                            if (r && e.test(t)) return t;\n                            n = \"number(px) or string(unit)\";\n                            break;\n                        case b:\n                            if (o) return t + this.unit;\n                            if (r && e.test(t)) return t;\n                            n = \"number(px) or string(unit or %)\";\n                            break;\n                        case k:\n                            if (o) return t + this.angle;\n                            if (r && e.test(t)) return t;\n                            n = \"number(deg) or string(angle)\";\n                            break;\n                        case _:\n                            if (o) return t;\n                            if (r && b.test(t)) return t;\n                            n = \"number(unitless) or string(unit or %)\"\n                    }\n                    return a(n, t), t\n                }, t.redraw = function() {\n                    this.el.offsetHeight\n                }\n            }),\n            R = l(D, function(t, e) {\n                t.init = function() {\n                    e.init.apply(this, arguments), this.original || (this.original = this.convert(this.get(), w))\n                }\n            }),\n            P = l(D, function(t, e) {\n                t.init = function() {\n                    e.init.apply(this, arguments), this.animate = this.fallback\n                }, t.get = function() {\n                    return this.$el[this.name]()\n                }, t.update = function(t) {\n                    this.$el[this.name](t)\n                }\n            }),\n            F = l(D, function(t, e) {\n                function n(t, e) {\n                    var n, i, o, r, a;\n                    for (n in t) r = Q[n], o = r[0], i = r[1] || n, a = this.convert(t[n], o), e.call(this, i, a, o)\n                }\n                t.init = function() {\n                    e.init.apply(this, arguments), this.current || (this.current = {}, Q.perspective && W.perspective && (this.current.perspective = W.perspective, U(this.el, this.name, this.style(this.current)), this.redraw()))\n                }, t.set = function(t) {\n                    n.call(this, t, function(t, e) {\n                        this.current[t] = e\n                    }), U(this.el, this.name, this.style(this.current)), this.redraw()\n                }, t.transition = function(t) {\n                    var e = this.values(t);\n                    this.tween = new H({\n                        current: this.current,\n                        values: e,\n                        duration: this.duration,\n                        delay: this.delay,\n                        ease: this.ease\n                    });\n                    var n, i = {};\n                    for (n in this.current) i[n] = n in e ? e[n] : this.current[n];\n                    this.active = !0, this.nextStyle = this.style(i)\n                }, t.fallback = function(t) {\n                    var e = this.values(t);\n                    this.tween = new H({\n                        current: this.current,\n                        values: e,\n                        duration: this.duration,\n                        delay: this.delay,\n                        ease: this.ease,\n                        update: this.update,\n                        context: this\n                    })\n                }, t.update = function() {\n                    U(this.el, this.name, this.style(this.current))\n                }, t.style = function(t) {\n                    var e, n = \"\";\n                    for (e in t) n += e + \"(\" + t[e] + \") \";\n                    return n\n                }, t.values = function(t) {\n                    var e, i = {};\n                    return n.call(this, t, function(t, n, o) {\n                        i[t] = n, void 0 === this.current[t] && (e = 0, ~t.indexOf(\"scale\") && (e = 1), this.current[t] = this.convert(e, o))\n                    }), i\n                }\n            }),\n            N = l(function(e) {\n                function n(t) {\n                    1 === f.push(t) && I(a)\n                }\n\n                function a() {\n                    var t, e, n, i = f.length;\n                    if (i)\n                        for (I(a), e = q(), t = i; t--;) n = f[t], n && n.render(e)\n                }\n\n                function c(e) {\n                    var n, i = t.inArray(e, f);\n                    i >= 0 && (n = f.slice(i + 1), f.length = i, n.length && (f = f.concat(n)))\n                }\n\n                function u(t) {\n                    return Math.round(t * h) / h\n                }\n\n                function l(t, e, n) {\n                    return o(t[0] + n * (e[0] - t[0]), t[1] + n * (e[1] - t[1]), t[2] + n * (e[2] - t[2]))\n                }\n                var p = {\n                    ease: d.ease[1],\n                    from: 0,\n                    to: 1\n                };\n                e.init = function(t) {\n                    this.duration = t.duration || 0, this.delay = t.delay || 0;\n                    var e = t.ease || p.ease;\n                    d[e] && (e = d[e][1]), \"function\" != typeof e && (e = p.ease), this.ease = e, this.update = t.update || r, this.complete = t.complete || r, this.context = t.context || this, this.name = t.name;\n                    var n = t.from,\n                        i = t.to;\n                    void 0 === n && (n = p.from), void 0 === i && (i = p.to), this.unit = t.unit || \"\", \"number\" == typeof n && \"number\" == typeof i ? (this.begin = n, this.change = i - n) : this.format(i, n), this.value = this.begin + this.unit, this.start = q(), t.autoplay !== !1 && this.play()\n                }, e.play = function() {\n                    this.active || (this.start || (this.start = q()), this.active = !0, n(this))\n                }, e.stop = function() {\n                    this.active && (this.active = !1, c(this))\n                }, e.render = function(t) {\n                    var e, n = t - this.start;\n                    if (this.delay) {\n                        if (n <= this.delay) return;\n                        n -= this.delay\n                    }\n                    if (n < this.duration) {\n                        var i = this.ease(n, 0, 1, this.duration);\n                        return e = this.startRGB ? l(this.startRGB, this.endRGB, i) : u(this.begin + i * this.change), this.value = e + this.unit, void this.update.call(this.context, this.value)\n                    }\n                    e = this.endHex || this.begin + this.change, this.value = e + this.unit, this.update.call(this.context, this.value), this.complete.call(this.context), this.destroy()\n                }, e.format = function(t, e) {\n                    if (e += \"\", t += \"\", \"#\" == t.charAt(0)) return this.startRGB = i(e), this.endRGB = i(t), this.endHex = t, this.begin = 0, void(this.change = 1);\n                    if (!this.unit) {\n                        var n = e.replace(v, \"\"),\n                            o = t.replace(v, \"\");\n                        n !== o && s(\"tween\", e, t), this.unit = n\n                    }\n                    e = parseFloat(e), t = parseFloat(t), this.begin = this.value = e, this.change = t - e\n                }, e.destroy = function() {\n                    this.stop(), this.context = null, this.ease = this.update = this.complete = r\n                };\n                var f = [],\n                    h = 1e3\n            }),\n            X = l(N, function(t) {\n                t.init = function(t) {\n                    this.duration = t.duration || 0, this.complete = t.complete || r, this.context = t.context, this.play()\n                }, t.render = function(t) {\n                    var e = t - this.start;\n                    e < this.duration || (this.complete.call(this.context), this.destroy())\n                }\n            }),\n            H = l(N, function(t, e) {\n                t.init = function(t) {\n                    this.context = t.context, this.update = t.update, this.tweens = [], this.current = t.current;\n                    var e, n;\n                    for (e in t.values) n = t.values[e], this.current[e] !== n && this.tweens.push(new N({\n                        name: e,\n                        from: this.current[e],\n                        to: n,\n                        duration: t.duration,\n                        delay: t.delay,\n                        ease: t.ease,\n                        autoplay: !1\n                    }));\n                    this.play()\n                }, t.render = function(t) {\n                    var e, n, i = this.tweens.length,\n                        o = !1;\n                    for (e = i; e--;) n = this.tweens[e], n.context && (n.render(t), this.current[n.name] = n.value, o = !0);\n                    return o ? void(this.update && this.update.call(this.context)) : this.destroy()\n                }, t.destroy = function() {\n                    if (e.destroy.call(this), this.tweens) {\n                        var t, n = this.tweens.length;\n                        for (t = n; t--;) this.tweens[t].destroy();\n                        this.tweens = null, this.current = null\n                    }\n                }\n            }),\n            W = e.config = {\n                defaultUnit: \"px\",\n                defaultAngle: \"deg\",\n                keepInherited: !1,\n                hideBackface: !1,\n                perspective: \"\",\n                fallback: !E.transition,\n                agentTests: []\n            };\n        e.fallback = function(t) {\n            if (!E.transition) return W.fallback = !0;\n            W.agentTests.push(\"(\" + t + \")\");\n            var e = new RegExp(W.agentTests.join(\"|\"), \"i\");\n            W.fallback = e.test(navigator.userAgent)\n        }, e.fallback(\"6.0.[2-5] Safari\"), e.tween = function(t) {\n            return new N(t)\n        }, e.delay = function(t, e, n) {\n            return new X({\n                complete: e,\n                duration: t,\n                context: n\n            })\n        }, t.fn.tram = function(t) {\n            return e.call(null, this, t)\n        };\n        var U = t.style,\n            Z = t.css,\n            G = {\n                transform: E.transform && E.transform.css\n            },\n            Y = {\n                color: [R, w],\n                background: [R, w, \"background-color\"],\n                \"outline-color\": [R, w],\n                \"border-color\": [R, w],\n                \"border-top-color\": [R, w],\n                \"border-right-color\": [R, w],\n                \"border-bottom-color\": [R, w],\n                \"border-left-color\": [R, w],\n                \"border-width\": [D, x],\n                \"border-top-width\": [D, x],\n                \"border-right-width\": [D, x],\n                \"border-bottom-width\": [D, x],\n                \"border-left-width\": [D, x],\n                \"border-spacing\": [D, x],\n                \"letter-spacing\": [D, x],\n                margin: [D, x],\n                \"margin-top\": [D, x],\n                \"margin-right\": [D, x],\n                \"margin-bottom\": [D, x],\n                \"margin-left\": [D, x],\n                padding: [D, x],\n                \"padding-top\": [D, x],\n                \"padding-right\": [D, x],\n                \"padding-bottom\": [D, x],\n                \"padding-left\": [D, x],\n                \"outline-width\": [D, x],\n                opacity: [D, y],\n                top: [D, b],\n                right: [D, b],\n                bottom: [D, b],\n                left: [D, b],\n                \"font-size\": [D, b],\n                \"text-indent\": [D, b],\n                \"word-spacing\": [D, b],\n                width: [D, b],\n                \"min-width\": [D, b],\n                \"max-width\": [D, b],\n                height: [D, b],\n                \"min-height\": [D, b],\n                \"max-height\": [D, b],\n                \"line-height\": [D, _],\n                \"scroll-top\": [P, y, \"scrollTop\"],\n                \"scroll-left\": [P, y, \"scrollLeft\"]\n            },\n            Q = {};\n        E.transform && (Y.transform = [F], Q = {\n            x: [b, \"translateX\"],\n            y: [b, \"translateY\"],\n            rotate: [k],\n            rotateX: [k],\n            rotateY: [k],\n            scale: [y],\n            scaleX: [y],\n            scaleY: [y],\n            skew: [k],\n            skewX: [k],\n            skewY: [k]\n        }), E.transform && E.backface && (Q.z = [b, \"translateZ\"], Q.rotateZ = [k], Q.scaleZ = [y], Q.perspective = [x]);\n        var J = /ms/,\n            V = /s|\\./,\n            K = function() {\n                var t = \"warn\",\n                    e = window.console;\n                return e && e[t] ? function(n) {\n                    e[t](n)\n                } : r\n            }();\n        return t.tram = e\n    }(window.jQuery)\n}, function(t, e, n) {\n    \"use strict\";\n    var i = n(1);\n    i.define(\"brand\", t.exports = function(t, e) {\n        var n = {},\n            o = t(\"html\"),\n            r = t(\"body\");\n        window.location, i.env();\n        return n.ready = function() {\n            var e = o.attr(\"data-wf-status\");\n            if (e) {\n                var n = t(\"<div></div>\"),\n                    i = t(\"<a></a>\");\n                i.attr(\"href\", \"http://moutheme.com?utm_campaign=brandjs\"), n.css({\n                    position: \"fixed\",\n                    bottom: 0,\n                    right: 0,\n                    borderTopLeftRadius: \"5px\",\n                    backgroundColor: \"#2b3239\",\n                    padding: \"8px 12px 5px 15px\",\n                    fontFamily: \"Arial\",\n                    fontSize: \"10px\",\n                    textTransform: \"uppercase\",\n                    opacity: \"0\",\n                    transition: \"opacity 0.50s ease-in-out\"\n                }), i.css({\n                    color: \"#AAADB0\",\n                    textDecoration: \"none\"\n                });\n                var a = t(\"<img>\");\n                if (a.attr(\"src\", \"https://daks2k3a4ib2z.cloudfront.net/54153e6a3d25f2755b1f14ed/5445a4b1944ecdaa4df86d3e_subdomain-brand.svg\"), a.css({\n                        opacity: .9,\n                        width: \"57px\",\n                        verticalAlign: \"middle\",\n                        paddingLeft: \"4px\",\n                        paddingBottom: \"3px\"\n                    }), n.text(\"Built with\"), n.append(a), i.append(n), r.append(i), /PhantomJS/.test(window.navigator.userAgent)) return;\n                n.css({\n                    opacity: \"1.0\"\n                })\n            }\n        }, n\n    })\n}, function(t, e, n) {\n    \"use strict\";\n    var i = n(1),\n        o = n(2);\n    i.define(\"dropdown\", t.exports = function(t, e) {\n        function n() {\n            m = y && i.env(\"design\"), h = g.find(w), h.each(r)\n        }\n\n        function r(e, n) {\n            var i = t(n),\n                o = t.data(n, w);\n            o || (o = t.data(n, w, {\n                open: !1,\n                el: i,\n                config: {}\n            })), o.list = i.children(\".w-dropdown-list\"), o.toggle = i.children(\".w-dropdown-toggle\"), o.links = o.list.children(\".w-dropdown-link\"), o.outside = p(o), o.complete = f(o), i.off(w), o.toggle.off(w), a(o), o.nav && o.nav.off(w), o.nav = i.closest(\".w-nav\"), o.nav.on(b, s(o)), m ? i.on(\"setting\" + w, s(o)) : (o.toggle.on(\"tap\" + w, c(o)), i.on(b, s(o)), y && l(o))\n        }\n\n        function a(t) {\n            t.config = {\n                hover: +t.el.attr(\"data-hover\"),\n                delay: +t.el.attr(\"data-delay\") || 0\n            }\n        }\n\n        function s(t) {\n            return function(e, n) {\n                return n = n || {}, \"w-close\" === e.type ? l(t) : \"setting\" === e.type ? (a(t), n.open === !0 && u(t, !0), void(n.open === !1 && l(t, !0))) : void 0\n            }\n        }\n\n        function c(t) {\n            return e.debounce(function(e) {\n                t.open ? l(t) : u(t)\n            })\n        }\n\n        function u(t, e) {\n            t.open || (d(t), t.open = !0, t.list.addClass(x), t.toggle.addClass(x), k.intro(0, t.el[0]), i.redraw.up(), m || g.on(\"tap\" + w, t.outside), window.clearTimeout(t.delayId))\n        }\n\n        function l(t, e) {\n            if (t.open) {\n                t.open = !1;\n                var n = t.config;\n                return k.outro(0, t.el[0]), g.off(\"tap\" + w, t.outside), window.clearTimeout(t.delayId), !n.delay || e ? t.complete() : void(t.delayId = window.setTimeout(t.complete, n.delay))\n            }\n        }\n\n        function d(e) {\n            var n = e.el[0];\n            h.each(function(e, i) {\n                var o = t(i);\n                o.is(n) || o.has(n).length || o.triggerHandler(b)\n            })\n        }\n\n        function p(n) {\n            return n.outside && g.off(\"tap\" + w, n.outside), e.debounce(function(e) {\n                if (n.open) {\n                    var i = t(e.target);\n                    i.closest(\".w-dropdown-toggle\").length || n.el.is(i.closest(w)) || l(n)\n                }\n            })\n        }\n\n        function f(t) {\n            return function() {\n                t.list.removeClass(x), t.toggle.removeClass(x)\n            }\n        }\n        var h, m, v = {},\n            g = (t.tram, t(document)),\n            y = i.env(),\n            w = \".w-dropdown\",\n            x = \"w--open\",\n            b = \"w-close\" + w,\n            k = o.triggers;\n        return v.ready = v.design = v.preview = n, v\n    })\n}, function(t, e, n) {\n    \"use strict\";\n    var i = n(1);\n    i.define(\"edit\", t.exports = function(t, e, n) {\n        function o() {\n            d || /\\?edit/.test(h.hash) && v()\n        }\n\n        function r() {\n            d = !0, window.mouthemeEditor = !0, f.off(m, o), t.ajax({\n                url: l(\"https://editor-api.moutheme.com/api/editor/view\"),\n                xhrFields: {\n                    withCredentials: !0\n                },\n                dataType: \"json\",\n                crossDomain: !0,\n                success: a\n            })\n        }\n\n        function a(t) {\n            return t ? void s(u(t.scriptPath), function() {\n                window.mouthemeEditor(t)\n            }) : void console.error(\"Could not load editor data\")\n        }\n\n        function s(e, n) {\n            t.ajax({\n                type: \"GET\",\n                url: e,\n                dataType: \"script\",\n                cache: !0\n            }).then(n, c)\n        }\n\n        function c(t, e, n) {\n            throw console.error(\"Could not load editor script: \" + e), n\n        }\n\n        function u(t) {\n            return t.indexOf(\"//\") >= 0 ? t : l(\"https://editor-api.moutheme.com\" + t)\n        }\n\n        function l(t) {\n            return t.replace(/([^:])\\/\\//g, \"$1/\")\n        }\n        if (n = n || {}, (i.env(\"test\") || i.env(\"frame\")) && !n.fixture) return {\n            exit: 1\n        };\n        var d, p = {},\n            f = t(window),\n            h = document.location,\n            m = \"hashchange\",\n            v = n.load || r;\n        return localStorage && localStorage.getItem && localStorage.getItem(\"mouthemeEditor\") ? v() : h.search ? (/[?&](edit)(?:[=&?]|$)/.test(h.search) || /\\?edit$/.test(h.href)) && v() : f.on(m, o).triggerHandler(m), p\n    })\n}, function(t, e, n) {\n    var i = n(1);\n    i.define(\"forms\", t.exports = function(t, e) {\n        function o() {\n            g = t(\"html\").attr(\"data-wf-site\"), v = t(k + \" form\"), v.length && v.each(r)\n        }\n\n        function r(e, n) {\n            var i = t(n),\n                o = t.data(n, k);\n            o || (o = t.data(n, k, {\n                form: i\n            })), s(o);\n            var r = i.closest(\"div.w-form\");\n            o.done = r.find(\"> .w-form-done\"), o.fail = r.find(\"> .w-form-fail\");\n            var a = o.action = i.attr(\"action\");\n            return o.handler = null, o.redirect = i.attr(\"data-redirect\"), B.test(a) ? void(o.handler = p) : a ? void 0 : g ? void(o.handler = d) : void z()\n        }\n\n        function a() {\n            y = !0, w.on(\"submit\", k + \" form\", function(e) {\n                var n = t.data(this, k);\n                n.handler && (n.evt = e, n.handler(n))\n            })\n        }\n\n        function s(t) {\n            var e = t.btn = t.form.find(':input[type=\"submit\"]');\n            t.wait = t.btn.attr(\"data-wait\") || null, t.success = !1, e.prop(\"disabled\", !1), t.label && e.val(t.label)\n        }\n\n        function c(t) {\n            var e = t.btn,\n                n = t.wait;\n            e.prop(\"disabled\", !0), n && (t.label = e.val(), e.val(n))\n        }\n\n        function u(e, n) {\n            var i = null;\n            return n = n || {}, e.find(':input:not([type=\"submit\"])').each(function(o, r) {\n                var a = t(r),\n                    s = a.attr(\"type\"),\n                    c = a.attr(\"data-name\") || a.attr(\"name\") || \"Field \" + (o + 1),\n                    u = a.val();\n                if (\"checkbox\" === s && (u = a.is(\":checked\")), \"radio\" === s) {\n                    if (null === n[c] || \"string\" == typeof n[c]) return;\n                    u = e.find('input[name=\"' + a.attr(\"name\") + '\"]:checked').val() || null\n                }\n                \"string\" == typeof u && (u = t.trim(u)), n[c] = u, i = i || l(a, c, u)\n            }), i\n        }\n\n        function l(t, e, n) {\n            var i = null;\n            return t.attr(\"required\") ? (n ? (_.test(e) || _.test(t.attr(\"type\"))) && (A.test(n) || (i = \"Please enter a valid email address for: \" + e)) : i = \"Please fill out the required field: \" + e, i) : null\n        }\n\n        function d(e) {\n            s(e);\n            var n = e.form,\n                o = {\n                    name: n.attr(\"data-name\") || n.attr(\"name\") || \"Untitled Form\",\n                    source: x.href,\n                    test: i.env(),\n                    fields: {}\n                };\n            h(e);\n            var r = u(n, o.fields);\n            if (r) return T(r);\n            if (c(e), !g) return void f(e);\n            var a = \"https://moutheme.com/api/v1/form/\" + g;\n            b && a.indexOf(\"https://moutheme.com\") >= 0 && (a = a.replace(\"https://moutheme.com\", \"http://formdata.moutheme.com\")), t.ajax({\n                url: a,\n                type: \"POST\",\n                data: o,\n                dataType: \"json\",\n                crossDomain: !0\n            }).done(function() {\n                e.success = !0, f(e)\n            }).fail(function(t, n, i) {\n                f(e)\n            })\n        }\n\n        function p(n) {\n            s(n);\n            var i = n.form,\n                o = {};\n            if (/^https/.test(x.href) && !/^https/.test(n.action)) return void i.attr(\"method\", \"post\");\n            h(n);\n            var r = u(i, o);\n            if (r) return T(r);\n            c(n);\n            var a;\n            e.each(o, function(t, e) {\n                _.test(e) && (o.EMAIL = t), /^((full[ _-]?)?name)$/i.test(e) && (a = t), /^(first[ _-]?name)$/i.test(e) && (o.FNAME = t), /^(last[ _-]?name)$/i.test(e) && (o.LNAME = t)\n            }), a && !o.FNAME && (a = a.split(\" \"), o.FNAME = a[0], o.LNAME = o.LNAME || a[1]);\n            var l = n.action.replace(\"/post?\", \"/post-json?\") + \"&c=?\",\n                d = l.indexOf(\"u=\") + 2;\n            d = l.substring(d, l.indexOf(\"&\", d));\n            var p = l.indexOf(\"id=\") + 3;\n            p = l.substring(p, l.indexOf(\"&\", p)), o[\"b_\" + d + \"_\" + p] = \"\", t.ajax({\n                url: l,\n                data: o,\n                dataType: \"jsonp\"\n            }).done(function(t) {\n                n.success = \"success\" === t.result || /already/.test(t.msg), n.success || console.info(\"MailChimp error: \" + t.msg), f(n)\n            }).fail(function(t, e, i) {\n                f(n)\n            })\n        }\n\n        function f(t) {\n            var e = t.form,\n                n = (e.closest(\"div.w-form\"), t.redirect),\n                o = t.success;\n            return o && n ? void i.location(n) : (t.done.toggle(o), t.fail.toggle(!o), e.toggle(!o), void s(t))\n        }\n\n        function h(t) {\n            t.evt && t.evt.preventDefault(), t.evt = null\n        }\n        var m = {};\n        n(19);\n        var v, g, y, w = t(document),\n            x = window.location,\n            b = window.XDomainRequest && !window.atob,\n            k = \".w-form\",\n            _ = /e(\\-)?mail/i,\n            A = /^\\S+@\\S+$/,\n            T = window.alert,\n            B = /list-manage[1-9]?.com/i,\n            z = e.debounce(function() {\n                T(\"Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue.\")\n            }, 100);\n        return m.ready = function() {\n            o(), y || a()\n        }, m.preview = m.design = function() {\n            o()\n        }, m\n    })\n}, function(t, e, n) {\n    \"use strict\";\n    var i = n(1);\n    i.define(\"gplus\", t.exports = function(t, e) {\n        function n() {\n            a.find(\".w-widget-gplus\").length && o()\n        }\n\n        function o() {\n            r = !0, t.getScript(\"https://apis.google.com/js/plusone.js\")\n        }\n        var r, a = t(document),\n            s = {};\n        return s.ready = function() {\n            i.env() || r || n()\n        }, s\n    })\n}, function(t, e, n) {\n    \"use strict\";\n    var i = n(1),\n        o = n(2);\n    i.define(\"ix\", t.exports = function(t, e) {\n        function n(t) {\n            t && (O = {}, e.each(t, function(t) {\n                O[t.slug] = t.value\n            }), r())\n        }\n\n        function r() {\n            var e = t(\"[data-ix]\");\n            e.length && (e.each(c), e.each(a), C.length && (i.scroll.on(u), setTimeout(u, 1)), L.length && i.load(l), E.length && setTimeout(d, j), o.init(), i.redraw.up())\n        }\n\n        function a(n, r) {\n            var a = t(r),\n                c = a.attr(\"data-ix\"),\n                u = O[c];\n            if (u) {\n                var l = u.triggers;\n                l && (w.style(a, u.style), e.each(l, function(t) {\n                    function e() {\n                        p(t, a, {\n                            group: \"A\"\n                        })\n                    }\n\n                    function n() {\n                        p(t, a, {\n                            group: \"B\"\n                        })\n                    }\n                    var r = {},\n                        c = t.type,\n                        u = t.stepsB && t.stepsB.length;\n                    if (\"load\" === c) return void(t.preload && !A ? L.push(e) : E.push(e));\n                    if (\"click\" === c) return a.on(\"click\" + b, function(e) {\n                        i.validClick(e.currentTarget) && (\"#\" === a.attr(\"href\") && e.preventDefault(), p(t, a, {\n                            group: r.clicked ? \"B\" : \"A\"\n                        }), u && (r.clicked = !r.clicked))\n                    }), void(z = z.add(a));\n                    if (\"hover\" === c) return a.on(\"mouseenter\" + b, e), a.on(\"mouseleave\" + b, n), void(z = z.add(a));\n                    if (\"scroll\" === c) return void C.push({\n                        el: a,\n                        trigger: t,\n                        state: {\n                            active: !1\n                        },\n                        offsetTop: s(t.offsetTop),\n                        offsetBot: s(t.offsetBot)\n                    });\n                    var l = M[c];\n                    if (l) {\n                        var d = a.closest(l);\n                        return d.on(o.types.INTRO, e).on(o.types.OUTRO, n), void(z = z.add(d))\n                    }\n                }))\n            }\n        }\n\n        function s(t) {\n            if (!t) return 0;\n            t += \"\";\n            var e = parseInt(t, 10);\n            return e !== e ? 0 : (t.indexOf(\"%\") > 0 && (e /= 100, e >= 1 && (e = .999)), e)\n        }\n\n        function c(e, n) {\n            t(n).off(b)\n        }\n\n        function u() {\n            for (var t = x.scrollTop(), e = x.height(), n = C.length, i = 0; n > i; i++) {\n                var o = C[i],\n                    r = o.el,\n                    a = o.trigger,\n                    s = a.stepsB && a.stepsB.length,\n                    c = o.state,\n                    u = r.offset().top,\n                    l = r.outerHeight(),\n                    d = o.offsetTop,\n                    f = o.offsetBot;\n                1 > d && d > 0 && (d *= e), 1 > f && f > 0 && (f *= e);\n                var h = u + l - d >= t && t + e >= u + f;\n                h !== c.active && (h !== !1 || s) && (c.active = h, p(a, r, {\n                    group: h ? \"A\" : \"B\"\n                }))\n            }\n        }\n\n        function l() {\n            for (var t = L.length, e = 0; t > e; e++) L[e]()\n        }\n\n        function d() {\n            for (var t = E.length, e = 0; t > e; e++) E[e]()\n        }\n\n        function p(e, n, i, o) {\n            function r() {\n                return c ? p(e, n, i, !0) : (\"auto\" === h.width && d.set({\n                    width: \"auto\"\n                }), \"auto\" === h.height && d.set({\n                    height: \"auto\"\n                }), void(a && a()))\n            }\n            i = i || {};\n            var a = i.done;\n            if (!g || i.force) {\n                var s = i.group || \"A\",\n                    c = e[\"loop\" + s],\n                    u = e[\"steps\" + s];\n                if (u && u.length) {\n                    if (u.length < 2 && (c = !1), !o) {\n                        var l = e.selector;\n                        l && (n = e.descend ? n.find(l) : e.siblings ? n.siblings(l) : t(l), A && n.attr(\"data-ix-affect\", 1)), T && n.addClass(\"w-ix-emptyfix\")\n                    }\n                    for (var d = k(n), h = {}, m = 0; m < u.length; m++) f(d, u[m], h);\n                    h.start ? d.then(r) : r()\n                }\n            }\n        }\n\n        function f(t, e, n) {\n            var o = \"add\",\n                r = \"start\";\n            n.start && (o = r = \"then\");\n            var a = e.transition;\n            if (a) {\n                a = a.split(\",\");\n                for (var s = 0; s < a.length; s++) {\n                    var c = a[s];\n                    t[o](c)\n                }\n            }\n            var u = v(e) || {};\n            if (null != u.width && (n.width = u.width), null != u.height && (n.height = u.height), null == a) {\n                n.start ? t.then(function() {\n                    var e = this.queue;\n                    this.set(u),\n                        u.display && (t.redraw(), i.redraw.up()), this.queue = e, this.next()\n                }) : (t.set(u), u.display && (t.redraw(), i.redraw.up()));\n                var l = u.wait;\n                null != l && (t.wait(l), n.start = !0)\n            } else {\n                if (u.display) {\n                    var d = u.display;\n                    delete u.display, n.start ? t.then(function() {\n                        var t = this.queue;\n                        this.set({\n                            display: d\n                        }).redraw(), i.redraw.up(), this.queue = t, this.next()\n                    }) : (t.set({\n                        display: d\n                    }).redraw(), i.redraw.up())\n                }\n                t[r](u), n.start = !0\n            }\n        }\n\n        function h(t, e) {\n            var n = k(t);\n            t.css(\"transition\", \"\");\n            var i = t.css(\"transition\");\n            i === B && (i = n.upstream = null), n.upstream = B, n.set(v(e)), n.upstream = i\n        }\n\n        function m(t, e) {\n            k(t).set(v(e))\n        }\n\n        function v(t) {\n            var e = {},\n                n = !1;\n            for (var i in t) \"transition\" !== i && (e[i] = t[i], n = !0);\n            return n ? e : null\n        }\n        var g, y, w = {},\n            x = t(window),\n            b = \".w-ix\",\n            k = t.tram,\n            _ = i.env,\n            A = _(),\n            T = _.chrome && _.chrome < 35,\n            B = \"none 0s ease 0s\",\n            z = t(),\n            O = {},\n            C = [],\n            L = [],\n            E = [],\n            j = 1,\n            M = {\n                tabs: \".w-tab-link, .w-tab-pane\",\n                dropdown: \".w-dropdown\",\n                slider: \".w-slide\",\n                navbar: \".w-nav\"\n            };\n        return w.init = function(t) {\n            setTimeout(function() {\n                n(t)\n            }, 1)\n        }, w.preview = function() {\n            g = !1, j = 100, setTimeout(function() {\n                n(window.__wf_ix)\n            }, 1)\n        }, w.design = function() {\n            g = !0, w.destroy()\n        }, w.destroy = function() {\n            y = !0, z.each(c), i.scroll.off(u), o.async(), C = [], L = [], E = []\n        }, w.ready = function() {\n            O && y && (y = !1, r())\n        }, w.run = p, w.style = A ? h : m, w\n    })\n}, function(t, e, n) {\n    \"use strict\";\n\n    function i(t, e, n) {\n        function i(t, e) {\n            return B = k(t) ? t : [t], w || i.build(), B.length > 1 && (w.items = w.empty, B.forEach(function(t) {\n                var e = v(\"thumbnail\"),\n                    n = v(\"item\").append(e);\n                w.items = w.items.add(n), c(t.thumbnailUrl || t.url, function(t) {\n                    t.prop(\"width\") > t.prop(\"height\") ? f(t, \"wide\") : f(t, \"tall\"), e.append(f(t, \"thumbnail-image\"))\n                })\n            }), w.strip.empty().append(w.items), f(w.content, \"group\")), b(h(w.lightbox, \"hide\").focus()).add(\"opacity .3s\").start({\n                opacity: 1\n            }), f(w.html, \"noscroll\"), i.show(e || 0)\n        }\n\n        function o(t) {\n            return function(e) {\n                this === e.target && (e.stopPropagation(), e.preventDefault(), t())\n            }\n        }\n\n        function r(t) {\n            t.preventDefault()\n        }\n\n        function a(t) {\n            var e = t.keyCode;\n            27 === e ? i.hide() : 37 === e ? i.prev() : 39 === e && i.next()\n        }\n\n        function s() {\n            w && (h(w.html, \"noscroll\"), f(w.lightbox, \"hide\"), w.strip.empty(), w.view && w.view.remove(), h(w.content, \"group\"), f(w.arrowLeft, \"inactive\"), f(w.arrowRight, \"inactive\"), y = w.view = void 0)\n        }\n\n        function c(t, e) {\n            var n = v(\"img\", \"img\");\n            return n.one(\"load\", function() {\n                e(n)\n            }), n.attr(\"src\", t), n\n        }\n\n        function u(t) {\n            return function() {\n                t.remove()\n            }\n        }\n\n        function l(t, e, n) {\n            this.$element = t, this.className = e, this.delay = n || 200, this.hide()\n        }\n\n        function d(t, e) {\n            return t.replace(T, (e ? \" .\" : \" \") + A)\n        }\n\n        function p(t) {\n            return d(t, !0)\n        }\n\n        function f(t, e) {\n            return t.addClass(d(e))\n        }\n\n        function h(t, e) {\n            return t.removeClass(d(e))\n        }\n\n        function m(t, e, n) {\n            return t.toggleClass(d(e), n)\n        }\n\n        function v(t, i) {\n            return f(n(e.createElement(i || \"div\")), t)\n        }\n\n        function g(t, e) {\n            var n = '<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"' + t + '\" height=\"' + e + '\"/>';\n            return \"data:image/svg+xml;charset=utf-8,\" + encodeURI(n)\n        }\n        var y, w, x, b = n.tram,\n            k = Array.isArray,\n            _ = \"w-lightbox\",\n            A = _ + \"-\",\n            T = /(^|\\s+)/g,\n            B = [];\n        i.build = function() {\n            return i.destroy(), w = {\n                html: n(e.documentElement),\n                empty: n()\n            }, w.arrowLeft = v(\"control left inactive\"), w.arrowRight = v(\"control right inactive\"), w.close = v(\"control close\"), w.spinner = v(\"spinner\"), w.strip = v(\"strip\"), x = new l(w.spinner, d(\"hide\")), w.content = v(\"content\").append(w.spinner, w.arrowLeft, w.arrowRight, w.close), w.container = v(\"container\").append(w.content, w.strip), w.lightbox = v(\"backdrop hide\").append(w.container), w.strip.on(\"tap\", p(\"item\"), L), w.content.on(\"swipe\", E).on(\"tap\", p(\"left\"), z).on(\"tap\", p(\"right\"), O).on(\"tap\", p(\"close\"), C).on(\"tap\", p(\"image, caption\"), O), w.container.on(\"tap\", p(\"view, strip\"), C).on(\"dragstart\", p(\"img\"), r), w.lightbox.on(\"keydown\", a).on(\"focusin\", j), n(\"body\").append(w.lightbox.prop(\"tabIndex\", 0)), i\n        }, i.destroy = function() {\n            w && (h(w.html, \"noscroll\"), w.lightbox.remove(), w = void 0)\n        }, i.show = function(t) {\n            if (t !== y) {\n                var e = B[t];\n                if (!e) return i.hide();\n                var o = y;\n                y = t, x.show();\n                var r = e.html && g(e.width, e.height) || e.url;\n                return c(r, function(i) {\n                    function r() {\n                        return x.hide(), t !== y ? void d.remove() : (m(w.arrowLeft, \"inactive\", 0 >= t), m(w.arrowRight, \"inactive\", t >= B.length - 1), w.view ? (b(w.view).add(\"opacity .3s\").start({\n                            opacity: 0\n                        }).then(u(w.view)), b(d).add(\"opacity .3s\").add(\"transform .3s\").set({\n                            x: t > o ? \"80px\" : \"-80px\"\n                        }).start({\n                            opacity: 1,\n                            x: 0\n                        })) : d.css(\"opacity\", 1), w.view = d, void(w.items && f(h(w.items, \"active\").eq(t), \"active\")))\n                    }\n                    if (t === y) {\n                        var a, s, c = v(\"figure\", \"figure\").append(f(i, \"image\")),\n                            l = v(\"frame\").append(c),\n                            d = v(\"view\").append(l);\n                        e.html && (a = n(e.html), s = a.is(\"iframe\"), s && a.on(\"load\", r), c.append(f(a, \"embed\"))), e.caption && c.append(v(\"caption\", \"figcaption\").text(e.caption)), w.spinner.before(d), s || r()\n                    }\n                }), i\n            }\n        }, i.hide = function() {\n            return b(w.lightbox).add(\"opacity .3s\").start({\n                opacity: 0\n            }).then(s), i\n        }, i.prev = function() {\n            y > 0 && i.show(y - 1)\n        }, i.next = function() {\n            y < B.length - 1 && i.show(y + 1)\n        };\n        var z = o(i.prev),\n            O = o(i.next),\n            C = o(i.hide),\n            L = function(t) {\n                var e = n(this).index();\n                t.preventDefault(), i.show(e)\n            },\n            E = function(t, e) {\n                t.preventDefault(), \"left\" === e.direction ? i.next() : \"right\" === e.direction && i.prev()\n            },\n            j = function() {\n                this.focus()\n            };\n        return l.prototype.show = function() {\n                var t = this;\n                t.timeoutId || (t.timeoutId = setTimeout(function() {\n                    t.$element.removeClass(t.className), delete t.timeoutId\n                }, t.delay))\n            }, l.prototype.hide = function() {\n                var t = this;\n                return t.timeoutId ? (clearTimeout(t.timeoutId), void delete t.timeoutId) : void t.$element.addClass(t.className)\n            },\n            function() {\n                function n() {\n                    var e = t.innerHeight,\n                        n = t.innerWidth,\n                        i = \".w-lightbox-content, .w-lightbox-view, .w-lightbox-view:before {height:\" + e + \"px}.w-lightbox-view {width:\" + n + \"px}.w-lightbox-group, .w-lightbox-group .w-lightbox-view, .w-lightbox-group .w-lightbox-view:before {height:\" + .86 * e + \"px}.w-lightbox-image {max-width:\" + n + \"px;max-height:\" + e + \"px}.w-lightbox-group .w-lightbox-image {max-height:\" + .86 * e + \"px}.w-lightbox-strip {padding: 0 \" + .01 * e + \"px}.w-lightbox-item {width:\" + .1 * e + \"px;padding:\" + .02 * e + \"px \" + .01 * e + \"px}.w-lightbox-thumbnail {height:\" + .1 * e + \"px}@media (min-width: 768px) {.w-lightbox-content, .w-lightbox-view, .w-lightbox-view:before {height:\" + .96 * e + \"px}.w-lightbox-content {margin-top:\" + .02 * e + \"px}.w-lightbox-group, .w-lightbox-group .w-lightbox-view, .w-lightbox-group .w-lightbox-view:before {height:\" + .84 * e + \"px}.w-lightbox-image {max-width:\" + .96 * n + \"px;max-height:\" + .96 * e + \"px}.w-lightbox-group .w-lightbox-image {max-width:\" + .823 * n + \"px;max-height:\" + .84 * e + \"px}}\";\n                    s.textContent = i\n                }\n                var i = t.navigator.userAgent,\n                    o = /(iPhone|iPad|iPod);[^OS]*OS (\\d)/,\n                    r = i.match(o),\n                    a = i.indexOf(\"Android \") > -1 && -1 === i.indexOf(\"Chrome\");\n                if (a || r && !(r[2] > 7)) {\n                    var s = e.createElement(\"style\");\n                    e.head.appendChild(s), t.addEventListener(\"orientationchange\", n, !0), n()\n                }\n            }(), i\n    }\n    var o = n(1);\n    o.define(\"lightbox\", t.exports = function(t, e) {\n        function n() {\n            l = m && o.env(\"design\"), c = t(document.body), f.destroy(), d = {}, u = h.find(v), u.mouthemeLightBox()\n        }\n\n        function r(t) {\n            var e, n, i = t.el.children(\".w-json\").html();\n            if (!i) return void(t.items = []);\n            try {\n                i = JSON.parse(i)\n            } catch (o) {\n                console.error(\"Malformed lightbox JSON configuration.\", o)\n            }\n            s(i), e = i.group, e ? (n = d[e], n || (n = d[e] = []), t.items = n, i.items.length && (t.index = n.length, n.push.apply(n, i.items))) : t.items = i.items\n        }\n\n        function a(t) {\n            return function() {\n                t.items.length && f(t.items, t.index || 0)\n            }\n        }\n\n        function s(t) {\n            t.images && (t.images.forEach(function(t) {\n                t.type = \"image\"\n            }), t.items = t.images), t.embed && (t.embed.type = \"video\", t.items = [t.embed]), t.groupId && (t.group = t.groupId)\n        }\n        var c, u, l, d, p = {},\n            f = i(window, document, t),\n            h = t(document),\n            m = o.env(),\n            v = \".w-lightbox\";\n        return p.ready = p.design = p.preview = n, jQuery.fn.extend({\n            mouthemeLightBox: function() {\n                var e = this;\n                t.each(e, function(e, n) {\n                    var i = t.data(n, v);\n                    i || (i = t.data(n, v, {\n                        el: t(n),\n                        mode: \"images\",\n                        images: [],\n                        embed: \"\"\n                    })), i.el.off(v), r(i), l ? i.el.on(\"setting\" + v, r.bind(null, i)) : i.el.on(\"tap\" + v, a(i)).on(\"click\" + v, function(t) {\n                        t.preventDefault()\n                    })\n                })\n            }\n        }), p\n    })\n}, function(t, e, n) {\n    \"use strict\";\n    var i = n(1);\n    i.define(\"links\", t.exports = function(t, e) {\n        function n() {\n            s = p && i.env(\"design\"), u = i.env(\"slug\") || f.pathname || \"\", i.scroll.off(r), c = [];\n            for (var t = document.links, e = 0; e < t.length; ++e) o(t[e]);\n            c.length && (i.scroll.on(r), r())\n        }\n\n        function o(e) {\n            var n = s && e.getAttribute(\"href-disabled\") || e.getAttribute(\"href\");\n            if (h.href = n, !(n.indexOf(\":\") >= 0)) {\n                var i = t(e);\n                if (0 === n.indexOf(\"#\") && v.test(n)) {\n                    var o = t(n);\n                    return void(o.length && c.push({\n                        link: i,\n                        sec: o,\n                        active: !1\n                    }))\n                }\n                if (\"#\" !== n) {\n                    var r = h.href === f.href || n === u || g.test(n) && y.test(u);\n                    a(i, m, r)\n                }\n            }\n        }\n\n        function r() {\n            var t = d.scrollTop(),\n                n = d.height();\n            e.each(c, function(e) {\n                var i = e.link,\n                    o = e.sec,\n                    r = o.offset().top,\n                    c = o.outerHeight(),\n                    u = .5 * n,\n                    l = o.is(\":visible\") && r + c - u >= t && t + n >= r + u;\n                e.active !== l && (e.active = l, a(i, m, l), s && (i[0].__wf_current = l))\n            })\n        }\n\n        function a(t, e, n) {\n            var i = t.hasClass(e);\n            n && i || (n || i) && (n ? t.addClass(e) : t.removeClass(e))\n        }\n        var s, c, u, l = {},\n            d = t(window),\n            p = i.env(),\n            f = window.location,\n            h = document.createElement(\"a\"),\n            m = \"w--current\",\n            v = /^#[a-zA-Z][\\w:.-]*$/,\n            g = /index\\.(html|php)$/,\n            y = /\\/$/;\n        return l.ready = l.design = l.preview = n, l\n    })\n}, function(t, e, n) {\n    \"use strict\";\n    var i = n(1);\n    i.define(\"maps\", t.exports = function(t, e) {\n        function n() {\n            d.length && i.app && d.each(i.app.redrawElement)\n        }\n\n        function o() {\n            function e() {\n                window._wf_maps_loaded = function() {}, h = window.google, d.each(s), r(), a()\n            }\n            d = f.find(m), d.length && (null === h ? (t.getScript(\"https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=_wf_maps_loaded\"), window._wf_maps_loaded = e) : e())\n        }\n\n        function r() {\n            i.resize.off(c), i.redraw.off(c)\n        }\n\n        function a() {\n            i.resize.on(c), i.redraw.on(c)\n        }\n\n        function s(e, n) {\n            var i = t(n).data();\n            l(n, i)\n        }\n\n        function c() {\n            d.each(u)\n        }\n\n        function u(t, e) {\n            var n = l(e);\n            h.maps.event.trigger(n.map, \"resize\"), n.setMapPosition()\n        }\n\n        function l(e, n) {\n            var o = t.data(e, v);\n            if (o) return o;\n            var r = t(e);\n            o = t.data(e, v, {\n                latLng: \"51.511214,-0.119824\",\n                tooltip: \"\",\n                style: \"roadmap\",\n                zoom: 12,\n                marker: new h.maps.Marker({\n                    draggable: !1\n                }),\n                infowindow: new h.maps.InfoWindow({\n                    disableAutoPan: !0\n                })\n            });\n            var a = n.widgetLatlng || o.latLng;\n            o.latLng = a;\n            var s = a.split(\",\"),\n                c = new h.maps.LatLng(s[0], s[1]);\n            o.latLngObj = c;\n            var u = i.env.touch && n.disableTouch ? !1 : !0;\n            o.map = new h.maps.Map(e, {\n                center: o.latLngObj,\n                zoom: o.zoom,\n                maxZoom: 18,\n                mapTypeControl: !1,\n                panControl: !1,\n                streetViewControl: !1,\n                scrollwheel: !n.disableScroll,\n                draggable: u,\n                zoomControl: !0,\n                zoomControlOptions: {\n                    style: h.maps.ZoomControlStyle.SMALL\n                },\n                mapTypeId: o.style\n            }), o.marker.setMap(o.map), o.setMapPosition = function() {\n                o.map.setCenter(o.latLngObj);\n                var t = 0,\n                    e = 0,\n                    n = r.css([\"paddingTop\", \"paddingRight\", \"paddingBottom\", \"paddingLeft\"]);\n                t -= parseInt(n.paddingLeft, 10), t += parseInt(n.paddingRight, 10), e -= parseInt(n.paddingTop, 10), e += parseInt(n.paddingBottom, 10), (t || e) && o.map.panBy(t, e), r.css(\"position\", \"\")\n            }, h.maps.event.addListener(o.map, \"tilesloaded\", function() {\n                h.maps.event.clearListeners(o.map, \"tilesloaded\"), o.setMapPosition()\n            }), o.setMapPosition(), o.marker.setPosition(o.latLngObj), o.infowindow.setPosition(o.latLngObj);\n            var l = n.widgetTooltip;\n            l && (o.tooltip = l, o.infowindow.setContent(l), o.infowindowOpen || (o.infowindow.open(o.map, o.marker), o.infowindowOpen = !0));\n            var d = n.widgetStyle;\n            d && o.map.setMapTypeId(d);\n            var p = n.widgetZoom;\n            return null != p && (o.zoom = p, o.map.setZoom(+p)), h.maps.event.addListener(o.marker, \"click\", function() {\n                window.open(\"https://maps.google.com/?z=\" + o.zoom + \"&daddr=\" + o.latLng)\n            }), o\n        }\n        var d, p = {},\n            f = t(document),\n            h = null,\n            m = \".w-widget-map\";\n        p.ready = function() {\n            i.env() || o()\n        }, p.preview = function() {\n            d = f.find(m), i.resize.off(n), d.length && (i.resize.on(n), n())\n        }, p.design = function(t) {\n            d = f.find(m), i.resize.off(n), d.length && e.defer(n)\n        }, p.destroy = r;\n        var v = \"w-widget-map\";\n        return p\n    })\n}, function(t, e, n) {\n    \"use strict\";\n    var i = n(1),\n        o = n(2);\n    i.define(\"navbar\", t.exports = function(t, e) {\n        function n() {\n            A = C && i.env(\"design\"), k = t(document.body), _ = O.find(E), _.length && (_.each(c), r(), a())\n        }\n\n        function r() {\n            i.resize.off(s)\n        }\n\n        function a() {\n            i.resize.on(s)\n        }\n\n        function s() {\n            _.each(g)\n        }\n\n        function c(e, n) {\n            var i = t(n),\n                o = t.data(n, E);\n            o || (o = t.data(n, E, {\n                open: !1,\n                el: i,\n                config: {}\n            })), o.menu = i.find(\".w-nav-menu\"), o.links = o.menu.find(\".w-nav-link\"), o.dropdowns = o.menu.find(\".w-dropdown\"), o.button = i.find(\".w-nav-button\"), o.container = i.find(\".w-container\"), o.outside = v(o), o.el.off(E), o.button.off(E), o.menu.off(E), d(o), A ? (u(o), o.el.on(\"setting\" + E, p(o))) : (l(o), o.button.on(\"tap\" + E, h(o)), o.menu.on(\"click\" + E, \"a\", m(o))), g(e, n)\n        }\n\n        function u(t) {\n            t.overlay && (b(t, !0), t.overlay.remove(), t.overlay = null)\n        }\n\n        function l(e) {\n            e.overlay || (e.overlay = t(L).appendTo(e.el), e.parent = e.menu.parent(), b(e, !0))\n        }\n\n        function d(t) {\n            var n = {},\n                i = t.config || {},\n                o = n.animation = t.el.attr(\"data-animation\") || \"default\";\n            n.animOver = /^over/.test(o), n.animDirect = /left$/.test(o) ? -1 : 1, i.animation !== o && t.open && e.defer(f, t), n.easing = t.el.attr(\"data-easing\") || \"ease\", n.easing2 = t.el.attr(\"data-easing2\") || \"ease\";\n            var r = t.el.attr(\"data-duration\");\n            n.duration = null != r ? +r : 400, n.docHeight = t.el.attr(\"data-doc-height\"), t.config = n\n        }\n\n        function p(t) {\n            return function(n, i) {\n                i = i || {};\n                var o = z.width();\n                d(t), i.open === !0 && w(t, !0), i.open === !1 && b(t, !0), t.open && e.defer(function() {\n                    o !== z.width() && f(t)\n                })\n            }\n        }\n\n        function f(t) {\n            t.open && (b(t, !0), w(t, !0))\n        }\n\n        function h(t) {\n            return e.debounce(function(e) {\n                t.open ? b(t) : w(t)\n            })\n        }\n\n        function m(e) {\n            return function(n) {\n                var o = t(this),\n                    r = o.attr(\"href\");\n                return i.validClick(n.currentTarget) ? void(r && 0 === r.indexOf(\"#\") && e.open && b(e)) : void n.preventDefault()\n            }\n        }\n\n        function v(n) {\n            return n.outside && O.off(\"tap\" + E, n.outside), e.debounce(function(e) {\n                if (n.open) {\n                    var i = t(e.target).closest(\".w-nav-menu\");\n                    n.menu.is(i) || b(n)\n                }\n            })\n        }\n\n        function g(e, n) {\n            var i = t.data(n, E),\n                o = i.collapsed = \"none\" !== i.button.css(\"display\");\n            if (!i.open || o || A || b(i, !0), i.container.length) {\n                var r = y(i);\n                i.links.each(r), i.dropdowns.each(r)\n            }\n            i.open && x(i)\n        }\n\n        function y(e) {\n            var n = e.container.css($);\n            return \"none\" === n && (n = \"\"),\n                function(e, i) {\n                    i = t(i), i.css($, \"\"), \"none\" === i.css($) && i.css($, n)\n                }\n        }\n\n        function w(t, e) {\n            if (!t.open) {\n                t.open = !0, t.menu.addClass(M), t.links.addClass(I), t.button.addClass(j);\n                var n = t.config,\n                    o = n.animation;\n                \"none\" !== o && B.support.transform || (e = !0);\n                var r = x(t),\n                    a = t.menu.outerHeight(!0),\n                    s = t.menu.outerWidth(!0),\n                    c = t.el.height(),\n                    u = t.el[0];\n                if (g(0, u), q.intro(0, u), i.redraw.up(), A || O.on(\"tap\" + E, t.outside), !e) {\n                    var l = \"transform \" + n.duration + \"ms \" + n.easing;\n                    if (t.overlay && t.overlay.show().append(t.menu), n.animOver) return B(t.menu).add(l).set({\n                        x: n.animDirect * s,\n                        height: r\n                    }).start({\n                        x: 0\n                    }), void(t.overlay && t.overlay.width(s));\n                    var d = c + a;\n                    B(t.menu).add(l).set({\n                        y: -d\n                    }).start({\n                        y: 0\n                    })\n                }\n            }\n        }\n\n        function x(t) {\n            var e = t.config,\n                n = e.docHeight ? O.height() : k.height();\n            return e.animOver ? t.menu.height(n) : \"fixed\" !== t.el.css(\"position\") && (n -= t.el.height()), t.overlay && t.overlay.height(n), n\n        }\n\n        function b(t, e) {\n            function n() {\n                t.menu.height(\"\"), B(t.menu).set({\n                    x: 0,\n                    y: 0\n                }), t.menu.removeClass(M), t.links.removeClass(I), t.overlay && t.overlay.children().length && (t.menu.appendTo(t.parent), t.overlay.attr(\"style\", \"\").hide()), t.el.triggerHandler(\"w-close\")\n            }\n            if (t.open) {\n                t.open = !1, t.button.removeClass(j);\n                var i = t.config;\n                \"none\" !== i.animation && B.support.transform || (e = !0);\n                i.animation;\n                if (q.outro(0, t.el[0]), O.off(\"tap\" + E, t.outside), e) return B(t.menu).stop(), void n();\n                var o = \"transform \" + i.duration + \"ms \" + i.easing2,\n                    r = t.menu.outerHeight(!0),\n                    a = t.menu.outerWidth(!0),\n                    s = t.el.height();\n                if (i.animOver) return void B(t.menu).add(o).start({\n                    x: a * i.animDirect\n                }).then(n);\n                var c = s + r;\n                B(t.menu).add(o).start({\n                    y: -c\n                }).then(n)\n            }\n        }\n        var k, _, A, T = {},\n            B = t.tram,\n            z = t(window),\n            O = t(document),\n            C = i.env(),\n            L = '<div class=\"w-nav-overlay\" data-wf-ignore />',\n            E = \".w-nav\",\n            j = \"w--open\",\n            M = \"w--nav-menu-open\",\n            I = \"w--nav-link-open\",\n            q = o.triggers;\n        T.ready = T.design = T.preview = n, T.destroy = r;\n        var $ = \"max-width\";\n        return T\n    })\n}, function(t, e, n) {\n    \"use strict\";\n    var i = n(1);\n    i.define(\"scroll\", t.exports = function(t, e) {\n        function n() {\n            try {\n                return !!l.frameElement\n            } catch (t) {\n                return !0\n            }\n        }\n\n        function o() {\n            d.hash && r(d.hash.substring(1));\n            var e = d.href.split(\"#\")[0];\n            u.on(\"click\", \"a\", function(n) {\n                if (!(i.env(\"design\") || window.$.mobile && t(n.currentTarget).hasClass(\"ui-link\"))) {\n                    if (\"#\" === this.getAttribute(\"href\")) return void n.preventDefault();\n                    var o = this.href.split(\"#\"),\n                        a = o[0] === e ? o[1] : null;\n                    a && r(a, n)\n                }\n            })\n        }\n\n        function r(e, n) {\n            if (f.test(e)) {\n                var o = t(\"#\" + e);\n                if (o.length) {\n                    if (n && (n.preventDefault(), n.stopPropagation()), d.hash !== e && p && p.pushState && (!i.env.chrome || \"file:\" !== d.protocol)) {\n                        var r = p.state && p.state.hash;\n                        r !== e && p.pushState({\n                            hash: e\n                        }, \"\", \"#\" + e)\n                    }\n                    var s = i.env(\"editor\") ? \".w-editor-body\" : \"body\",\n                        c = t(\"header, \" + s + \" > .header, \" + s + \" > .w-nav:not([data-no-scroll])\"),\n                        u = \"fixed\" === c.css(\"position\") ? c.outerHeight() : 0;\n                    l.setTimeout(function() {\n                        a(o, u)\n                    }, n ? 0 : 300)\n                }\n            }\n        }\n\n        function a(e, n) {\n            var i = t(l).scrollTop(),\n                o = e.offset().top - n;\n            if (\"mid\" === e.data(\"scroll\")) {\n                var r = t(l).height() - n,\n                    a = e.outerHeight();\n                r > a && (o -= Math.round((r - a) / 2))\n            }\n            var c = 1;\n            t(\"body\").add(e).each(function(e) {\n                var n = parseFloat(t(this).attr(\"data-scroll-time\"), 10);\n                !isNaN(n) && (0 === n || n > 0) && (c = n)\n            }), Date.now || (Date.now = function() {\n                return (new Date).getTime()\n            });\n            var u = Date.now(),\n                d = l.requestAnimationFrame || l.mozRequestAnimationFrame || l.webkitRequestAnimationFrame || function(t) {\n                    l.setTimeout(t, 15)\n                },\n                p = (472.143 * Math.log(Math.abs(i - o) + 125) - 2e3) * c,\n                f = function() {\n                    var t = Date.now() - u;\n                    l.scroll(0, s(i, o, t, p)), p >= t && d(f)\n                };\n            f()\n        }\n\n        function s(t, e, n, i) {\n            return n > i ? e : t + (e - t) * c(n / i)\n        }\n\n        function c(t) {\n            return .5 > t ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1\n        }\n        var u = t(document),\n            l = window,\n            d = l.location,\n            p = n() ? null : l.history,\n            f = /^[a-zA-Z0-9][\\w:.-]*$/;\n        return {\n            ready: o\n        }\n    })\n}, function(t, e, n) {\n    \"use strict\";\n    var i = n(1),\n        o = n(2);\n    i.define(\"slider\", t.exports = function(t, e) {\n        function n() {\n            k = O.find(L), k.length && (k.filter(\":visible\").each(c), T = null, A || (r(), a()))\n        }\n\n        function r() {\n            i.resize.off(s), i.redraw.off(B.redraw)\n        }\n\n        function a() {\n            i.resize.on(s), i.redraw.on(B.redraw)\n        }\n\n        function s() {\n            k.filter(\":visible\").each(g)\n        }\n\n        function c(e, n) {\n            var i = t(n),\n                o = t.data(n, L);\n            return o || (o = t.data(n, L, {\n                index: 0,\n                depth: 1,\n                el: i,\n                config: {}\n            })), o.mask = i.children(\".w-slider-mask\"), o.left = i.children(\".w-slider-arrow-left\"), o.right = i.children(\".w-slider-arrow-right\"), o.nav = i.children(\".w-slider-nav\"), o.slides = o.mask.children(\".w-slide\"), o.slides.each(j.reset), T && (o.maskWidth = 0), z.support.transform ? (o.el.off(L), o.left.off(L), o.right.off(L), o.nav.off(L), u(o), _ ? (o.el.on(\"setting\" + L, m(o)), h(o), o.hasTimer = !1) : (o.el.on(\"swipe\" + L, m(o)), o.left.on(\"tap\" + L, l(o)), o.right.on(\"tap\" + L, d(o)), o.config.autoplay && !o.hasTimer && (o.hasTimer = !0, o.timerCount = 1, f(o))), o.nav.on(\"tap\" + L, \"> div\", m(o)), C || o.mask.contents().filter(function() {\n                return 3 === this.nodeType\n            }).remove(), void g(e, n)) : (o.left.hide(), o.right.hide(), o.nav.hide(), void(A = !0))\n        }\n\n        function u(t) {\n            var e = {};\n            e.crossOver = 0, e.animation = t.el.attr(\"data-animation\") || \"slide\", \"outin\" === e.animation && (e.animation = \"cross\", e.crossOver = .5), e.easing = t.el.attr(\"data-easing\") || \"ease\";\n            var n = t.el.attr(\"data-duration\");\n            if (e.duration = null != n ? +n : 500, +t.el.attr(\"data-infinite\") && (e.infinite = !0), +t.el.attr(\"data-disable-swipe\") && (e.disableSwipe = !0), +t.el.attr(\"data-hide-arrows\") ? e.hideArrows = !0 : t.config.hideArrows && (t.left.show(), t.right.show()), +t.el.attr(\"data-autoplay\")) {\n                e.autoplay = !0, e.delay = +t.el.attr(\"data-delay\") || 2e3, e.timerMax = +t.el.attr(\"data-autoplay-limit\");\n                var i = \"mousedown\" + L + \" touchstart\" + L;\n                _ || t.el.off(i).one(i, function() {\n                    h(t)\n                })\n            }\n            var o = t.right.width();\n            e.edge = o ? o + 40 : 100, t.config = e\n        }\n\n        function l(t) {\n            return function(e) {\n                v(t, {\n                    index: t.index - 1,\n                    vector: -1\n                })\n            }\n        }\n\n        function d(t) {\n            return function(e) {\n                v(t, {\n                    index: t.index + 1,\n                    vector: 1\n                })\n            }\n        }\n\n        function p(i, o) {\n            var r = null;\n            o === i.slides.length && (n(), y(i)), e.each(i.anchors, function(e, n) {\n                t(e.els).each(function(e, i) {\n                    t(i).index() === o && (r = n)\n                })\n            }), null != r && v(i, {\n                index: r,\n                immediate: !0\n            })\n        }\n\n        function f(t) {\n            h(t);\n            var e = t.config,\n                n = e.timerMax;\n            n && t.timerCount++ > n || (t.timerId = window.setTimeout(function() {\n                null == t.timerId || _ || (d(t)(), f(t))\n            }, e.delay))\n        }\n\n        function h(t) {\n            window.clearTimeout(t.timerId), t.timerId = null\n        }\n\n        function m(e) {\n            return function(n, o) {\n                o = o || {};\n                var r = e.config;\n                if (_ && \"setting\" === n.type) {\n                    if (\"prev\" === o.select) return l(e)();\n                    if (\"next\" === o.select) return d(e)();\n                    if (u(e), y(e), null == o.select) return;\n                    return void p(e, o.select)\n                }\n                if (\"swipe\" !== n.type) e.nav.has(n.target).length && v(e, {\n                    index: t(n.target).index()\n                });\n                else {\n                    if (r.disableSwipe) return;\n                    if (i.env(\"editor\")) return;\n                    if (\"left\" === o.direction) return d(e)();\n                    if (\"right\" === o.direction) return l(e)()\n                }\n            }\n        }\n\n        function v(e, n) {\n            function i() {\n                p = t(r[e.index].els), h = e.slides.not(p), \"slide\" !== m && (d.visibility = \"hidden\"), z(h).set(d)\n            }\n            n = n || {};\n            var o = e.config,\n                r = e.anchors;\n            e.previous = e.index;\n            var a = n.index,\n                s = {};\n            0 > a ? (a = r.length - 1, o.infinite && (s.x = -e.endX, s.from = 0, s.to = r[0].width)) : a >= r.length && (a = 0, o.infinite && (s.x = r[r.length - 1].width, s.from = -r[r.length - 1].x, s.to = s.from - s.x)), e.index = a;\n            var c = e.nav.children().eq(e.index).addClass(\"w-active\");\n            e.nav.children().not(c).removeClass(\"w-active\"), o.hideArrows && (e.index === r.length - 1 ? e.right.hide() : e.right.show(), 0 === e.index ? e.left.hide() : e.left.show());\n            var u = e.offsetX || 0,\n                l = e.offsetX = -r[e.index].x,\n                d = {\n                    x: l,\n                    opacity: 1,\n                    visibility: \"\"\n                },\n                p = t(r[e.index].els),\n                f = t(r[e.previous] && r[e.previous].els),\n                h = e.slides.not(p),\n                m = o.animation,\n                v = o.easing,\n                g = Math.round(o.duration),\n                y = n.vector || (e.index > e.previous ? 1 : -1),\n                w = \"opacity \" + g + \"ms \" + v,\n                x = \"transform \" + g + \"ms \" + v;\n            if (_ || (p.each(j.intro), h.each(j.outro)), n.immediate && !T) return z(p).set(d), void i();\n            if (e.index !== e.previous) {\n                if (\"cross\" === m) {\n                    var b = Math.round(g - g * o.crossOver),\n                        k = Math.round(g - b);\n                    return w = \"opacity \" + b + \"ms \" + v, z(f).set({\n                        visibility: \"\"\n                    }).add(w).start({\n                        opacity: 0\n                    }), void z(p).set({\n                        visibility: \"\",\n                        x: l,\n                        opacity: 0,\n                        zIndex: e.depth++\n                    }).add(w).wait(k).then({\n                        opacity: 1\n                    }).then(i)\n                }\n                return \"fade\" === m ? (z(f).set({\n                    visibility: \"\"\n                }).stop(), void z(p).set({\n                    visibility: \"\",\n                    x: l,\n                    opacity: 0,\n                    zIndex: e.depth++\n                }).add(w).start({\n                    opacity: 1\n                }).then(i)) : \"over\" === m ? (d = {\n                    x: e.endX\n                }, z(f).set({\n                    visibility: \"\"\n                }).stop(), void z(p).set({\n                    visibility: \"\",\n                    zIndex: e.depth++,\n                    x: l + r[e.index].width * y\n                }).add(x).start({\n                    x: l\n                }).then(i)) : void(o.infinite && s.x ? (z(e.slides.not(f)).set({\n                    visibility: \"\",\n                    x: s.x\n                }).add(x).start({\n                    x: l\n                }), z(f).set({\n                    visibility: \"\",\n                    x: s.from\n                }).add(x).start({\n                    x: s.to\n                }), e.shifted = f) : (o.infinite && e.shifted && (z(e.shifted).set({\n                    visibility: \"\",\n                    x: u\n                }), e.shifted = null), z(e.slides).set({\n                    visibility: \"\"\n                }).add(x).start({\n                    x: l\n                })))\n            }\n        }\n\n        function g(e, n) {\n            var i = t.data(n, L);\n            return x(i) ? y(i) : void(_ && b(i) && y(i))\n        }\n\n        function y(e) {\n            var n = 1,\n                i = 0,\n                o = 0,\n                r = 0,\n                a = e.maskWidth,\n                s = a - e.config.edge;\n            0 > s && (s = 0), e.anchors = [{\n                els: [],\n                x: 0,\n                width: 0\n            }], e.slides.each(function(c, u) {\n                o - i > s && (n++, i += a, e.anchors[n - 1] = {\n                    els: [],\n                    x: o,\n                    width: 0\n                }), r = t(u).outerWidth(!0), o += r, e.anchors[n - 1].width += r, e.anchors[n - 1].els.push(u)\n            }), e.endX = o, _ && (e.pages = null), e.nav.length && e.pages !== n && (e.pages = n, w(e));\n            var c = e.index;\n            c >= n && (c = n - 1), v(e, {\n                immediate: !0,\n                index: c\n            })\n        }\n\n        function w(e) {\n            var n, i = [],\n                o = e.el.attr(\"data-nav-spacing\");\n            o && (o = parseFloat(o) + \"px\");\n            for (var r = 0; r < e.pages; r++) n = t(E), e.nav.hasClass(\"w-num\") && n.text(r + 1), null != o && n.css({\n                \"margin-left\": o,\n                \"margin-right\": o\n            }), i.push(n);\n            e.nav.empty().append(i)\n        }\n\n        function x(t) {\n            var e = t.mask.width();\n            return t.maskWidth !== e ? (t.maskWidth = e, !0) : !1\n        }\n\n        function b(e) {\n            var n = 0;\n            return e.slides.each(function(e, i) {\n                n += t(i).outerWidth(!0)\n            }), e.slidesWidth !== n ? (e.slidesWidth = n, !0) : !1\n        }\n        var k, _, A, T, B = {},\n            z = t.tram,\n            O = t(document),\n            C = i.env(),\n            L = \".w-slider\",\n            E = '<div class=\"w-slider-dot\" data-wf-ignore />',\n            j = o.triggers;\n        return B.ready = function() {\n            n()\n        }, B.design = function() {\n            _ = !0, n()\n        }, B.preview = function() {\n            _ = !1, n()\n        }, B.redraw = function() {\n            T = !0, n()\n        }, B.destroy = r, B\n    })\n}, function(t, e, n) {\n    \"use strict\";\n    var i = n(1),\n        o = n(2);\n    i.define(\"tabs\", t.exports = function(t, e) {\n        function n() {\n            f = x && i.env(\"design\"), p = g.find(k), p.length && (p.each(c), i.env(\"preview\") && p.each(s), h = null, r(), a())\n        }\n\n        function r() {\n            i.redraw.off(m.redraw)\n        }\n\n        function a() {\n            i.redraw.on(m.redraw)\n        }\n\n        function s(e, n) {\n            var i = (t(n), t.data(n, k));\n            i && (i.links && i.links.each(T.reset), i.panes && i.panes.each(T.reset))\n        }\n\n        function c(e, n) {\n            var i = t(n),\n                o = t.data(n, k);\n            if (o || (o = t.data(n, k, {\n                    el: i,\n                    config: {}\n                })), o.current = null, o.menu = i.children(\".w-tab-menu\"), o.links = o.menu.children(\".w-tab-link\"), o.content = i.children(\".w-tab-content\"), o.panes = o.content.children(\".w-tab-pane\"), o.el.off(k), o.links.off(k), u(o), !f) {\n                o.links.on(\"click\" + k, l(o));\n                var r = o.links.filter(\".\" + _),\n                    a = r.attr(b);\n                a && d(o, {\n                    tab: a,\n                    immediate: !0\n                })\n            }\n        }\n\n        function u(t) {\n            var e = {};\n            t.config || {};\n            e.easing = t.el.attr(\"data-easing\") || \"ease\";\n            var n = +t.el.attr(\"data-duration-in\");\n            n = e.intro = n === n ? n : 0;\n            var i = +t.el.attr(\"data-duration-out\");\n            i = e.outro = i === i ? i : 0, e.immediate = !n && !i, t.config = e\n        }\n\n        function l(t) {\n            return function(e) {\n                var n = e.currentTarget.getAttribute(b);\n                n && d(t, {\n                    tab: n\n                })\n            }\n        }\n\n        function d(e, n) {\n            function o() {\n                return d.removeClass(A).removeAttr(\"style\"), l.addClass(A).each(T.intro), i.redraw.up(), r.intro ? void v(l).set({\n                    opacity: 0\n                }).redraw().add(\"opacity \" + r.intro + \"ms \" + a, {\n                    fallback: w\n                }).start({\n                    opacity: 1\n                }) : v(l).set({\n                    opacity: 1\n                })\n            }\n            n = n || {};\n            var r = e.config,\n                a = r.easing,\n                s = n.tab;\n            if (s !== e.current) {\n                e.current = s, e.links.each(function(e, n) {\n                    var i = t(n);\n                    n.getAttribute(b) === s ? i.addClass(_).each(T.intro) : i.hasClass(_) && i.removeClass(_).each(T.outro)\n                });\n                var c = [],\n                    u = [];\n                e.panes.each(function(e, n) {\n                    var i = t(n);\n                    n.getAttribute(b) === s ? c.push(n) : i.hasClass(A) && u.push(n)\n                });\n                var l = t(c),\n                    d = t(u);\n                return n.immediate || r.immediate ? (l.addClass(A).each(T.intro), d.removeClass(A), void(h || i.redraw.up())) : void(d.length && r.outro ? (d.each(T.outro), v(d).add(\"opacity \" + r.outro + \"ms \" + a, {\n                    fallback: w\n                }).start({\n                    opacity: 0\n                }).then(o)) : o())\n            }\n        }\n        var p, f, h, m = {},\n            v = t.tram,\n            g = (t(window), t(document)),\n            y = i.env,\n            w = y.safari,\n            x = y(),\n            b = \"data-w-tab\",\n            k = \".w-tabs\",\n            _ = \"w--current\",\n            A = \"w--tab-active\",\n            T = o.triggers;\n        return m.ready = m.design = m.preview = n, m.redraw = function() {\n            h = !0, n()\n        }, m.destroy = function() {\n            p = g.find(k), p.length && (p.each(s), r())\n        }, m\n    })\n}, function(t, e, n) {\n    \"use strict\";\n    var i = n(1);\n    i.define(\"touch\", t.exports = function(t, e) {\n        function n(t) {\n            function e(t) {\n                var e = t.touches;\n                e && e.length > 1 || (d = !0, p = !1, e ? (f = !0, c = e[0].clientX, u = e[0].clientY) : (c = t.clientX, u = t.clientY), l = c)\n            }\n\n            function n(t) {\n                if (d) {\n                    if (f && \"mousemove\" === t.type) return t.preventDefault(), void t.stopPropagation();\n                    var e = t.touches,\n                        n = e ? e[0].clientX : t.clientX,\n                        o = e ? e[0].clientY : t.clientY,\n                        s = n - l;\n                    l = n, Math.abs(s) > h && a && a() + \"\" == \"\" && (i(\"swipe\", t, {\n                        direction: s > 0 ? \"right\" : \"left\"\n                    }), r()), (Math.abs(n - c) > 10 || Math.abs(o - u) > 10) && (p = !0)\n                }\n            }\n\n            function o(t) {\n                return d ? (d = !1, f && \"mouseup\" === t.type ? (t.preventDefault(), t.stopPropagation(), void(f = !1)) : void(p || i(\"tap\", t))) : void 0\n            }\n\n            function r(t) {\n                d = !1\n            }\n\n            function s() {\n                t.removeEventListener(\"touchstart\", e, !1), t.removeEventListener(\"touchmove\", n, !1), t.removeEventListener(\"touchend\", o, !1), t.removeEventListener(\"touchcancel\", r, !1), t.removeEventListener(\"mousedown\", e, !1), t.removeEventListener(\"mousemove\", n, !1), t.removeEventListener(\"mouseup\", o, !1), t.removeEventListener(\"mouseout\", r, !1), t = null\n            }\n            var c, u, l, d = !1,\n                p = !1,\n                f = !1,\n                h = Math.min(Math.round(.04 * window.innerWidth), 40);\n            t.addEventListener(\"touchstart\", e, !1), t.addEventListener(\"touchmove\", n, !1), t.addEventListener(\"touchend\", o, !1), t.addEventListener(\"touchcancel\", r, !1), t.addEventListener(\"mousedown\", e, !1), t.addEventListener(\"mousemove\", n, !1), t.addEventListener(\"mouseup\", o, !1), t.addEventListener(\"mouseout\", r, !1), this.destroy = s\n        }\n\n        function i(e, n, i) {\n            var o = t.Event(e, {\n                originalEvent: n\n            });\n            t(n.target).trigger(o, i)\n        }\n        var o = {},\n            r = !document.addEventListener,\n            a = window.getSelection;\n        return r && (t.event.special.tap = {\n            bindType: \"click\",\n            delegateType: \"click\"\n        }), o.init = function(e) {\n            return r ? null : (e = \"string\" == typeof e ? t(e).get(0) : e, e ? new n(e) : null)\n        }, o.instance = o.init(document), o\n    })\n}, function(t, e, n) {\n    \"use strict\";\n    var i = window.$,\n        o = n(3) && i.tram;\n    t.exports = function() {\n        var t = {};\n        t.VERSION = \"1.6.0-moutheme\";\n        var e = {},\n            n = Array.prototype,\n            i = Object.prototype,\n            r = Function.prototype,\n            a = (n.push, n.slice),\n            s = (n.concat, i.toString, i.hasOwnProperty),\n            c = n.forEach,\n            u = n.map,\n            l = (n.reduce, n.reduceRight, n.filter),\n            d = (n.every, n.some),\n            p = n.indexOf,\n            f = (n.lastIndexOf, Array.isArray, Object.keys),\n            h = (r.bind, t.each = t.forEach = function(n, i, o) {\n                if (null == n) return n;\n                if (c && n.forEach === c) n.forEach(i, o);\n                else if (n.length === +n.length) {\n                    for (var r = 0, a = n.length; a > r; r++)\n                        if (i.call(o, n[r], r, n) === e) return\n                } else\n                    for (var s = t.keys(n), r = 0, a = s.length; a > r; r++)\n                        if (i.call(o, n[s[r]], s[r], n) === e) return; return n\n            });\n        t.map = t.collect = function(t, e, n) {\n            var i = [];\n            return null == t ? i : u && t.map === u ? t.map(e, n) : (h(t, function(t, o, r) {\n                i.push(e.call(n, t, o, r))\n            }), i)\n        }, t.find = t.detect = function(t, e, n) {\n            var i;\n            return m(t, function(t, o, r) {\n                return e.call(n, t, o, r) ? (i = t, !0) : void 0\n            }), i\n        }, t.filter = t.select = function(t, e, n) {\n            var i = [];\n            return null == t ? i : l && t.filter === l ? t.filter(e, n) : (h(t, function(t, o, r) {\n                e.call(n, t, o, r) && i.push(t)\n            }), i)\n        };\n        var m = t.some = t.any = function(n, i, o) {\n            i || (i = t.identity);\n            var r = !1;\n            return null == n ? r : d && n.some === d ? n.some(i, o) : (h(n, function(t, n, a) {\n                return r || (r = i.call(o, t, n, a)) ? e : void 0\n            }), !!r)\n        };\n        t.contains = t.include = function(t, e) {\n            return null == t ? !1 : p && t.indexOf === p ? -1 != t.indexOf(e) : m(t, function(t) {\n                return t === e\n            })\n        }, t.delay = function(t, e) {\n            var n = a.call(arguments, 2);\n            return setTimeout(function() {\n                return t.apply(null, n)\n            }, e)\n        }, t.defer = function(e) {\n            return t.delay.apply(t, [e, 1].concat(a.call(arguments, 1)))\n        }, t.throttle = function(t) {\n            var e, n, i;\n            return function() {\n                e || (e = !0, n = arguments, i = this, o.frame(function() {\n                    e = !1, t.apply(i, n)\n                }))\n            }\n        }, t.debounce = function(e, n, i) {\n            var o, r, a, s, c, u = function() {\n                var l = t.now() - s;\n                n > l ? o = setTimeout(u, n - l) : (o = null, i || (c = e.apply(a, r), a = r = null))\n            };\n            return function() {\n                a = this, r = arguments, s = t.now();\n                var l = i && !o;\n                return o || (o = setTimeout(u, n)), l && (c = e.apply(a, r), a = r = null), c\n            }\n        }, t.defaults = function(e) {\n            if (!t.isObject(e)) return e;\n            for (var n = 1, i = arguments.length; i > n; n++) {\n                var o = arguments[n];\n                for (var r in o) void 0 === e[r] && (e[r] = o[r])\n            }\n            return e\n        }, t.keys = function(e) {\n            if (!t.isObject(e)) return [];\n            if (f) return f(e);\n            var n = [];\n            for (var i in e) t.has(e, i) && n.push(i);\n            return n\n        }, t.has = function(t, e) {\n            return s.call(t, e)\n        }, t.isObject = function(t) {\n            return t === Object(t)\n        }, t.now = Date.now || function() {\n            return (new Date).getTime()\n        }, t.templateSettings = {\n            evaluate: /<%([\\s\\S]+?)%>/g,\n            interpolate: /<%=([\\s\\S]+?)%>/g,\n            escape: /<%-([\\s\\S]+?)%>/g\n        };\n        var v = /(.)^/,\n            g = {\n                \"'\": \"'\",\n                \"\\\\\": \"\\\\\",\n                \"\\r\": \"r\",\n                \"\\n\": \"n\",\n                \"\\u2028\": \"u2028\",\n                \"\\u2029\": \"u2029\"\n            },\n            y = /\\\\|'|\\r|\\n|\\u2028|\\u2029/g,\n            w = function(t) {\n                return \"\\\\\" + g[t]\n            };\n        return t.template = function(e, n, i) {\n            !n && i && (n = i), n = t.defaults({}, n, t.templateSettings);\n            var o = RegExp([(n.escape || v).source, (n.interpolate || v).source, (n.evaluate || v).source].join(\"|\") + \"|$\", \"g\"),\n                r = 0,\n                a = \"__p+='\";\n            e.replace(o, function(t, n, i, o, s) {\n                return a += e.slice(r, s).replace(y, w), r = s + t.length, n ? a += \"'+\\n((__t=(\" + n + \"))==null?'':_.escape(__t))+\\n'\" : i ? a += \"'+\\n((__t=(\" + i + \"))==null?'':__t)+\\n'\" : o && (a += \"';\\n\" + o + \"\\n__p+='\"), t\n            }), a += \"';\\n\", n.variable || (a = \"with(obj||{}){\\n\" + a + \"}\\n\"), a = \"var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};\\n\" + a + \"return __p;\\n\";\n            try {\n                var s = new Function(n.variable || \"obj\", \"_\", a)\n            } catch (c) {\n                throw c.source = a, c\n            }\n            var u = function(e) {\n                    return s.call(this, e, t)\n                },\n                l = n.variable || \"obj\";\n            return u.source = \"function(\" + l + \"){\\n\" + a + \"}\", u\n        }, t\n    }()\n}, function(t, e) {\n    t.exports = function(t) {\n        if (!t.support.cors && t.ajaxTransport && window.XDomainRequest) {\n            var e = /^https?:\\/\\//i,\n                n = /^get|post$/i,\n                i = new RegExp(\"^\" + location.protocol, \"i\");\n            t.ajaxTransport(\"* text html xml json\", function(o, r, a) {\n                if (o.crossDomain && o.async && n.test(o.type) && e.test(o.url) && i.test(o.url)) {\n                    var s = null;\n                    return {\n                        send: function(e, n) {\n                            var i = \"\",\n                                a = (r.dataType || \"\").toLowerCase();\n                            s = new XDomainRequest, /^\\d+$/.test(r.timeout) && (s.timeout = r.timeout), s.ontimeout = function() {\n                                n(500, \"timeout\")\n                            }, s.onload = function() {\n                                var e = \"Content-Length: \" + s.responseText.length + \"\\r\\nContent-Type: \" + s.contentType,\n                                    i = {\n                                        code: 200,\n                                        message: \"success\"\n                                    },\n                                    o = {\n                                        text: s.responseText\n                                    };\n                                try {\n                                    if (\"html\" === a || /text\\/html/i.test(s.contentType)) o.html = s.responseText;\n                                    else if (\"json\" === a || \"text\" !== a && /\\/json/i.test(s.contentType)) try {\n                                        o.json = t.parseJSON(s.responseText)\n                                    } catch (r) {\n                                        i.code = 500, i.message = \"parseerror\"\n                                    } else if (\"xml\" === a || \"text\" !== a && /\\/xml/i.test(s.contentType)) {\n                                        var c = new ActiveXObject(\"Microsoft.XMLDOM\");\n                                        c.async = !1;\n                                        try {\n                                            c.loadXML(s.responseText)\n                                        } catch (r) {\n                                            c = void 0\n                                        }\n                                        if (!c || !c.documentElement || c.getElementsByTagName(\"parsererror\").length) throw i.code = 500, i.message = \"parseerror\", \"Invalid XML: \" + s.responseText;\n                                        o.xml = c\n                                    }\n                                } catch (u) {\n                                    throw u\n                                } finally {\n                                    n(i.code, i.message, o, e)\n                                }\n                            }, s.onprogress = function() {}, s.onerror = function() {\n                                n(500, \"error\", {\n                                    text: s.responseText\n                                })\n                            }, r.data && (i = \"string\" === t.type(r.data) ? r.data : t.param(r.data)), s.open(o.type, o.url), s.send(i)\n                        },\n                        abort: function() {\n                            s && s.abort()\n                        }\n                    }\n                }\n            })\n        }\n    }(window.jQuery)\n}]), moutheme.require(\"ix\").init([{\n    slug: \"hide-overlay-menu-on-load\",\n    name: \"hide overlay menu on load\",\n    value: {\n        style: {\n            display: \"none\",\n            opacity: 0,\n            x: \"-100%\",\n            y: \"0px\"\n        },\n        triggers: []\n    }\n}, {\n    slug: \"show-overlay-menu-on-click\",\n    name: \"show overlay menu on click\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"click\",\n            selector: \".overlay-menu\",\n            stepsA: [{\n                display: \"block\",\n                opacity: 1,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"0px\",\n                y: \"0px\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"-100%\",\n                y: \"0px\"\n            }, {\n                display: \"none\"\n            }]\n        }]\n    }\n}, {\n    slug: \"show-dropdown-on-hover\",\n    name: \"show dropdown on hover\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"hover\",\n            selector: \".ul-dropdown\",\n            siblings: !0,\n            stepsA: [{\n                display: \"block\",\n                height: \"auto\",\n                transition: \"height 500ms ease 0ms\"\n            }],\n            stepsB: []\n        }]\n    }\n}, {\n    slug: \"make-dropdown-height-0\",\n    name: \"make dropdown height 0 \",\n    value: {\n        style: {\n            height: \"0px\"\n        },\n        triggers: []\n    }\n}, {\n    slug: \"close-dropdown-on-hover\",\n    name: \"close dropdown on hover\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"hover\",\n            selector: \".ul-dropdown\",\n            stepsA: [],\n            stepsB: [{\n                height: \"0px\",\n                transition: \"height 500ms ease 0ms\"\n            }]\n        }]\n    }\n}, {\n    slug: \"hide-filter-opacity-0\",\n    name: \"hide filter opacity 0\",\n    value: {\n        style: {\n            opacity: 0\n        },\n        triggers: []\n    }\n}, {\n    slug: \"open-filter-menu\",\n    name: \"open filter menu\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"click\",\n            selector: \".filter-txt\",\n            stepsA: [{\n                opacity: 1,\n                transition: \"opacity 200ms ease 0ms\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"opacity 200ms ease 0ms\"\n            }]\n        }, {\n            type: \"click\",\n            selector: \".filter-txt-hide\",\n            stepsA: [{\n                opacity: 0,\n                transition: \"opacity 200ms ease 0ms\"\n            }],\n            stepsB: [{\n                opacity: 1,\n                transition: \"opacity 200ms ease 0ms\"\n            }]\n        }, {\n            type: \"click\",\n            selector: \".filters\",\n            stepsA: [{\n                display: \"block\",\n                opacity: 1,\n                transition: \"transform 200ms ease 0ms, opacity 200ms ease 0ms\",\n                x: \"0px\",\n                y: \"0px\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"transform 200ms ease 0ms, opacity 200ms ease 0ms\",\n                x: \"0px\",\n                y: \"-25px\"\n            }, {\n                display: \"none\"\n            }]\n        }]\n    }\n}, {\n    slug: \"move-filter-content-on-load\",\n    name: \"move filter content on load\",\n    value: {\n        style: {\n            display: \"none\",\n            opacity: 0,\n            x: \"0px\",\n            y: \"-25px\"\n        },\n        triggers: []\n    }\n}, {\n    slug: \"hide-portfolio-content-on-load\",\n    name: \"hide portfolio content on load\",\n    value: {\n        style: {\n            opacity: 0\n        },\n        triggers: []\n    }\n}, {\n    slug: \"scale-portfolio-title-on-load\",\n    name: \"scale portfolio title on load\",\n    value: {\n        style: {\n            opacity: 0,\n            scale: 1.5,\n            rotate: \"-40deg\"\n        },\n        triggers: []\n    }\n}, {\n    slug: \"hover-portfolio-content\",\n    name: \"hover portfolio content\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"hover\",\n            selector: \".portfolio-title\",\n            descend: !0,\n            stepsA: [{\n                opacity: 1,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                scale: 1,\n                rotate: \"0deg\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                scale: 1.25,\n                rotate: \"-40deg\"\n            }]\n        }, {\n            type: \"hover\",\n            selector: \".portfolio-content\",\n            descend: !0,\n            stepsA: [{\n                opacity: 1,\n                transition: \"opacity 500ms ease 0ms\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"opacity 500ms ease 0ms\"\n            }]\n        }, {\n            type: \"hover\",\n            selector: \".portfolio-sub-title\",\n            descend: !0,\n            stepsA: [{\n                wait: 400\n            }, {\n                opacity: 1,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"0px\",\n                y: \"0px\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"0px\",\n                y: \"20px\"\n            }]\n        }]\n    }\n}, {\n    slug: \"scale-portfolio-title-on-load-2\",\n    name: \"scale portfolio title on load 2\",\n    value: {\n        style: {\n            opacity: 0,\n            x: \"0px\",\n            y: \"20px\"\n        },\n        triggers: []\n    }\n}, {\n    slug: \"move-team-content-on-load\",\n    name: \"move team content on load\",\n    value: {\n        style: {\n            x: \"0px\",\n            y: \"75%\"\n        },\n        triggers: []\n    }\n}, {\n    slug: \"show-team-content-on-hover\",\n    name: \"show team content on hover\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"hover\",\n            selector: \".team-content\",\n            descend: !0,\n            stepsA: [{\n                transition: \"transform 300ms ease 0ms\",\n                x: \"0px\",\n                y: \"0px\"\n            }],\n            stepsB: [{\n                transition: \"transform 300ms ease 0ms\",\n                x: \"0px\",\n                y: \"75%\"\n            }]\n        }]\n    }\n}, {\n    slug: \"over-portfolio-content-bottom\",\n    name: \"over portfolio content bottom\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"hover\",\n            selector: \".portfolio-overlay-bottom\",\n            descend: !0,\n            stepsA: [{\n                opacity: 1,\n                transition: \"transform 300ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"0px\",\n                y: \"0px\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"transform 300ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"0px\",\n                y: \"80px\"\n            }]\n        }, {\n            type: \"hover\",\n            selector: \".portfolio-title\",\n            descend: !0,\n            stepsA: [{\n                wait: 100\n            }, {\n                opacity: 1,\n                transition: \"transform 300ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"0px\",\n                y: \"0px\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"transform 500ms ease 0ms, opacity 300ms ease 0ms\",\n                x: \"0px\",\n                y: \"20px\"\n            }]\n        }, {\n            type: \"hover\",\n            selector: \".portfolio-sub-title\",\n            descend: !0,\n            stepsA: [{\n                wait: 200\n            }, {\n                opacity: 1,\n                transition: \"transform 300ms ease 0ms, opacity 300ms ease 0ms\",\n                x: \"0px\",\n                y: \"0px\"\n            }],\n            stepsB: [{\n                transition: \"transform 300ms ease 0ms\",\n                x: \"0px\",\n                y: \"20px\"\n            }]\n        }]\n    }\n}, {\n    slug: \"move-portfolio-overlay-bottom\",\n    name: \"move portfolio overlay bottom\",\n    value: {\n        style: {\n            opacity: 0,\n            x: \"0px\",\n            y: \"80px\"\n        },\n        triggers: []\n    }\n}, {\n    slug: \"move-portfolio-title\",\n    name: \"move portfolio title\",\n    value: {\n        style: {\n            opacity: 0,\n            x: \"0px\",\n            y: \"20px\"\n        },\n        triggers: []\n    }\n}, {\n    slug: \"blog-hover-zoom-photo\",\n    name: \"blog hover zoom photo\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"hover\",\n            selector: \".blog-link\",\n            descend: !0,\n            stepsA: [{\n                transition: \"transform 1000ms ease 0ms\",\n                scale: 1.3\n            }],\n            stepsB: [{\n                transition: \"transform 1000ms ease 0ms\",\n                scale: 1\n            }]\n        }, {\n            type: \"hover\",\n            selector: \".blog-link-2\",\n            descend: !0,\n            stepsA: [{\n                transition: \"transform 1000ms ease 0ms\",\n                scale: 1.3\n            }],\n            stepsB: [{\n                transition: \"transform 1000ms ease 0ms\",\n                scale: 1\n            }]\n        }]\n    }\n}, {\n    slug: \"open-map-on-load\",\n    name: \"open map on load\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"click\",\n            selector: \".filter-txt\",\n            stepsA: [{\n                opacity: 1,\n                transition: \"opacity 200ms ease 0ms\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"opacity 200ms ease 0ms\"\n            }]\n        }, {\n            type: \"click\",\n            selector: \".filter-txt-hide\",\n            stepsA: [{\n                opacity: 0,\n                transition: \"opacity 200ms ease 0ms\"\n            }],\n            stepsB: [{\n                opacity: 1,\n                transition: \"opacity 200ms ease 0ms\"\n            }]\n        }, {\n            type: \"click\",\n            selector: \".cnt-content\",\n            stepsA: [{\n                display: \"none\"\n            }],\n            stepsB: [{\n                display: \"block\"\n            }]\n        }]\n    }\n}, {\n    slug: \"dispnay-none-on-load-project-info\",\n    name: \"dispnay none on load project info\",\n    value: {\n        style: {\n            display: \"none\",\n            opacity: 0,\n            x: \"-100px\",\n            y: \"0px\"\n        },\n        triggers: []\n    }\n}, {\n    slug: \"open-project-info-on-click\",\n    name: \"open project info on click\",\n    value: {\n        style: {},\n        triggers: []\n    }\n}, {\n    slug: \"open-map-on-load-2\",\n    name: \"open map on load 2\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"click\",\n            selector: \".filter-txt\",\n            stepsA: [{\n                opacity: 1,\n                transition: \"opacity 200ms ease 0ms\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"opacity 200ms ease 0ms\"\n            }]\n        }, {\n            type: \"click\",\n            selector: \".filter-txt-hide\",\n            stepsA: [{\n                opacity: 0,\n                transition: \"opacity 200ms ease 0ms\"\n            }],\n            stepsB: [{\n                opacity: 1,\n                transition: \"opacity 200ms ease 0ms\"\n            }]\n        }, {\n            type: \"click\",\n            selector: \".project-info\",\n            stepsA: [{\n                display: \"block\",\n                opacity: 1,\n                transition: \"transform 300ms ease 0ms, opacity 400ms ease 0ms\",\n                x: \"0px\",\n                y: \"0px\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"transform 300ms ease 0ms, opacity 400ms ease 0ms\",\n                x: \"-100px\",\n                y: \"0px\"\n            }, {\n                display: \"none\"\n            }]\n        }]\n    }\n}, {\n    slug: \"line-menu-type\",\n    name: \"line menu type \",\n    value: {\n        style: {\n            width: \"0%\"\n        },\n        triggers: []\n    }\n}, {\n    slug: \"show-line-menu-type-2\",\n    name: \"show line menu type 2\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"hover\",\n            selector: \".line-bottom-menu\",\n            siblings: !0,\n            stepsA: [{\n                width: \"100%\",\n                transition: \"opacity 500ms ease 0ms, width 300ms ease 0ms\"\n            }],\n            stepsB: [{\n                width: \"0%\",\n                transition: \"width 300ms ease 0ms\"\n            }]\n        }]\n    }\n}, {\n    slug: \"hide-menu-type-2-on-load\",\n    name: \"hide menu type 2 on load\",\n    value: {\n        style: {\n            display: \"none\",\n            opacity: 0,\n            x: \"0px\",\n            y: \"-20px\"\n        },\n        triggers: []\n    }\n}, {\n    slug: \"show-menu-type-2\",\n    name: \"show menu type 2\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"click\",\n            selector: \".navigation-type-2\",\n            stepsA: [{\n                display: \"block\",\n                opacity: 1,\n                transition: \"transform 300ms ease 0ms, opacity 300ms ease 0ms\",\n                x: \"0px\",\n                y: \"0px\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"transform 300ms ease 0ms, opacity 300ms ease 0ms\",\n                x: \"0px\",\n                y: \"-20px\"\n            }, {\n                display: \"none\"\n            }]\n        }]\n    }\n}, {\n    slug: \"show-dropdown\",\n    name: \"show dropdown\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"hover\",\n            selector: \".dropdown-down-2\",\n            descend: !0,\n            stepsA: [{\n                display: \"block\"\n            }],\n            stepsB: [{\n                display: \"none\"\n            }]\n        }]\n    }\n}, {\n    slug: \"move-up-team-contetn\",\n    name: \"move up team contetn\",\n    value: {\n        style: {\n            opacity: 0,\n            x: \"0px\",\n            y: \"50px\"\n        },\n        triggers: []\n    }\n}, {\n    slug: \"show-team-content\",\n    name: \"show team content\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"hover\",\n            selector: \".team-content\",\n            descend: !0,\n            stepsA: [{\n                wait: 100\n            }, {\n                opacity: 1,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"0px\",\n                y: \"0px\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"0px\",\n                y: \"50px\"\n            }]\n        }, {\n            type: \"hover\",\n            selector: \".team-overlay\",\n            descend: !0,\n            stepsA: [{\n                opacity: 1,\n                transition: \"opacity 500ms ease 0ms\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"opacity 500ms ease 0ms\"\n            }]\n        }]\n    }\n}, {\n    slug: \"hide-menu-type-3-on-load\",\n    name: \"hide menu type 3 on load\",\n    value: {\n        style: {\n            display: \"none\",\n            opacity: 0\n        },\n        triggers: []\n    }\n}, {\n    slug: \"show-menu-type-3\",\n    name: \"show menu type 3\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"click\",\n            selector: \".video-wrapper\",\n            stepsA: [{\n                display: \"block\",\n                opacity: 1,\n                transition: \"opacity 300ms ease 0ms\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"opacity 300ms ease 0ms\"\n            }, {\n                display: \"none\"\n            }]\n        }]\n    }\n}, {\n    slug: \"move-up-on-slide\",\n    name: \"move up on slide\",\n    value: {\n        style: {\n            opacity: 0,\n            x: \"0px\",\n            y: \"-50px\"\n        },\n        triggers: [{\n            type: \"slider\",\n            stepsA: [{\n                wait: 200\n            }, {\n                opacity: 1,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"0px\",\n                y: \"0px\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"0px\",\n                y: \"-50px\"\n            }]\n        }]\n    }\n}, {\n    slug: \"move-up-on-slide-2\",\n    name: \"move up on slide 2\",\n    value: {\n        style: {\n            opacity: 0,\n            x: \"0px\",\n            y: \"-50px\"\n        },\n        triggers: [{\n            type: \"slider\",\n            stepsA: [{\n                wait: 400\n            }, {\n                opacity: 1,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"0px\",\n                y: \"0px\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"0px\",\n                y: \"-50px\"\n            }]\n        }]\n    }\n}, {\n    slug: \"fade-in-on-slide-3\",\n    name: \"fade in on slide 3\",\n    value: {\n        style: {\n            opacity: 0\n        },\n        triggers: [{\n            type: \"slider\",\n            stepsA: [{\n                wait: 800\n            }, {\n                opacity: 1,\n                transition: \"opacity 500ms ease 0ms\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"opacity 500ms ease 0ms\"\n            }]\n        }]\n    }\n}, {\n    slug: \"move-left-on-slide-4\",\n    name: \"move left on slide 4\",\n    value: {\n        style: {\n            opacity: 0,\n            x: \"-50px\",\n            y: \"0px\"\n        },\n        triggers: [{\n            type: \"slider\",\n            stepsA: [{\n                wait: 200\n            }, {\n                opacity: 1,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"0px\",\n                y: \"0px\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"-50px\",\n                y: \"0px\"\n            }]\n        }]\n    }\n}, {\n    slug: \"move-left-on-slide-5\",\n    name: \"move left on slide 5\",\n    value: {\n        style: {\n            opacity: 0,\n            x: \"50px\",\n            y: \"0px\"\n        },\n        triggers: [{\n            type: \"slider\",\n            stepsA: [{\n                wait: 400\n            }, {\n                opacity: 1,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"0px\",\n                y: \"0px\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"transform 500ms ease 0ms, opacity 500ms ease 0ms\",\n                x: \"50px\",\n                y: \"0px\"\n            }]\n        }]\n    }\n}, {\n    slug: \"fade-in-on-slide-4\",\n    name: \"fade in on slide 4\",\n    value: {\n        style: {\n            opacity: 0\n        },\n        triggers: [{\n            type: \"slider\",\n            stepsA: [{\n                wait: 800\n            }, {\n                opacity: 1,\n                transition: \"opacity 500ms ease 0ms\"\n            }],\n            stepsB: [{\n                opacity: 0,\n                transition: \"opacity 500ms ease 0ms\"\n            }]\n        }]\n    }\n}, {\n    slug: \"responsive-menu\",\n    name: \"responsive menu\",\n    value: {\n        style: {\n            display: \"none\",\n            height: \"0px\"\n        },\n        triggers: []\n    }\n}, {\n    slug: \"open-responsive-menu\",\n    name: \"open responsive menu\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"click\",\n            selector: \".responsive-nav\",\n            stepsA: [{\n                height: \"auto\",\n                transition: \"height 500ms ease 0ms\"\n            }],\n            stepsB: [{\n                height: \"0px\",\n                transition: \"height 500ms ease 0ms\"\n            }]\n        }, {\n            type: \"click\",\n            selector: \".dd-res\",\n            stepsA: [],\n            stepsB: [{\n                height: \"0px\",\n                transition: \"height 500ms ease 0ms\"\n            }]\n        }]\n    }\n}, {\n    slug: \"open-dd-res\",\n    name: \"open dd res\",\n    value: {\n        style: {},\n        triggers: [{\n            type: \"click\",\n            selector: \".dd-res\",\n            siblings: !0,\n            stepsA: [{\n                height: \"auto\",\n                transition: \"height 500ms ease 0ms\"\n            }],\n            stepsB: [{\n                height: \"0px\",\n                transition: \"height 500ms ease 0ms\"\n            }]\n        }]\n    }\n}]);\n",
+			"file": "plugins.js",
+			"file_size": 134428,
+			"file_write_time": 130973305370000000,
+			"settings":
+			{
+				"buffer_size": 134428,
+				"line_ending": "Unix",
+				"name": "! function(t) {"
+			}
+		},
+		{
+			"file": "src/components/FuelSavingsResults.spec.js",
+			"settings":
+			{
+				"buffer_size": 1775,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/FuelSavingsApp.js",
+			"settings":
+			{
+				"buffer_size": 3187,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "packa",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ins	",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/tuantruong/Projects/asterix/web/solution",
+		"/Users/tuantruong/Projects/asterix/web/solution/src",
+		"/Users/tuantruong/Projects/asterix/web/solution/src/components",
+		"/Users/tuantruong/Projects/asterix/web/solution/src/containers",
+		"/Users/tuantruong/Projects/asterix/web/solution/src/styles",
+		"/Users/tuantruong/Projects/asterix/web/solution/vendor"
+	],
+	"file_history":
+	[
+		"/Users/tuantruong/Projects/asterix/web/solution/vendor/royal_preloader.js",
+		"/Users/tuantruong/Projects/asterix/web/solution/src/styles/styles.scss",
+		"/Users/tuantruong/Projects/asterix/web/solution/README.md",
+		"/Users/tuantruong/Projects/asterix/web/solution/package.json",
+		"/Users/tuantruong/Projects/asterix/web/html/css/style.css",
+		"/Users/tuantruong/Projects/asterix/web/html/js/svgLoader.js",
+		"/Users/tuantruong/Projects/asterix/web/html/js/main.js",
+		"/Users/tuantruong/Projects/asterix/web/html/demo_2.html",
+		"/Users/tuantruong/Projects/ruby/fundstart/solution/config/database.yml",
+		"/Users/tuantruong/Projects/asterix/web/solution/client/assets/javascripts/svgLoader.js",
+		"/Users/tuantruong/Projects/asterix/web/solution/src/containers/App/App.scss",
+		"/Users/tuantruong/Projects/asterix/web/solution/src/server.js",
+		"/Users/tuantruong/Projects/asterix/web/solution/server.babel.js",
+		"/Users/tuantruong/Projects/asterix/web/solution/src/containers/App/App.js",
+		"/Users/tuantruong/Projects/asterix/web/monsy/website/js/jquery.js",
+		"/Users/tuantruong/Downloads/owl.carousel.2.0.0-beta.2.4/assets/owl.carousel.css",
+		"/Users/tuantruong/Projects/asterix/web/monsy/website/css/animate.min.css",
+		"/Users/tuantruong/Projects/asterix/web/monsy/website/css/owl.carousel.css",
+		"/Users/tuantruong/Projects/asterix/web/monsy/website/css/owl.theme.css",
+		"/Users/tuantruong/Projects/asterix/web/app/src/client.js",
+		"/Users/tuantruong/Projects/asterix/web/monsy/documentation/css/style.css",
+		"/Users/tuantruong/Projects/asterix/web/monsy/documentation/index.html",
+		"/private/etc/hosts",
+		"/Users/tuantruong/Projects/node/warriorjs/tt-beginner/Player.js",
+		"/Users/tuantruong/Projects/node/warriorjs/tt-beginner/README",
+		"/Users/tuantruong/Projects/node/userstory/:q",
+		"/Users/tuantruong/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/tuantruong/Downloads/data.json",
+		"/Users/tuantruong/Projects/node/userstory/app/routes/api.js",
+		"/Users/tuantruong/Projects/node/userstory/public/app/views/index.html",
+		"/Users/tuantruong/Projects/node/userstory/public/app/services/userService.js",
+		"/Users/tuantruong/Projects/node/userstory/public/app/controllers/userCtrl.js",
+		"/Users/tuantruong/Projects/node/userstory/public/app/views/pages/signup.html",
+		"/Users/tuantruong/Projects/node/userstory/public/app/views/pages/login.html",
+		"/Users/tuantruong/Projects/node/userstory/public/app/controllers/mainCtrl.js",
+		"/Users/tuantruong/Projects/node/userstory/public/app/app.routes.js",
+		"/Users/tuantruong/Projects/node/userstory/public/app/app.js",
+		"/Users/tuantruong/Projects/node/userstory/public/app/views/pages/home.html",
+		"/Users/tuantruong/Projects/node/userstory/app/models/story.js",
+		"/Users/tuantruong/Projects/node/userstory/server.js",
+		"/Users/tuantruong/Projects/node/userstory/public/app/services/authService.js",
+		"/Users/tuantruong/Projects/node/userstory/app/models/user.js",
+		"/Users/tuantruong/Projects/node/userstory/config.js",
+		"/Users/tuantruong/Projects/node/userstory/package.json",
+		"/Users/tuantruong/Projects/node/userstory/public/views/index.html",
+		"/Users/tuantruong/Projects/node/userstory/public/app/controllers/mainController.js",
+		"/D/Projects/Niteco/Commerce Project/Sample/InteractiveColoringConcept/InteractiveColoringConcept/index.html",
+		"/C/Users/tuan.truong/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/tuantruong/Projects/node/userstory"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"jquery",
+			"dir",
+			"mina",
+			"snap",
+			"svg",
+			"zigzag_dark",
+			"svg",
+			"mainContentBg",
+			"SVGLoader",
+			"<svg",
+			"pageload",
+			"pageload-overlay",
+			"entrance",
+			"fade",
+			"fadeOutUp",
+			"fadeInUp",
+			"ShowAboutUs",
+			"showHome",
+			"coming",
+			"createHistory",
+			"store",
+			"redux",
+			"<provider",
+			"tween",
+			"generated",
+			"main",
+			"MainController",
+			"AuthInterceptor",
+			"UserCreateController",
+			"Auth.isLoggedIn ",
+			"AuthToken"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 99,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Material Theme/langs/npm JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 10.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/components/LandingPage.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								132,
+								132
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "webpack.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2317,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1077,
+								1077
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "vendor/royal_preloader.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12501,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1338,
+								1338
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 4.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "vendor/plugins.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 134428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								134428,
+								134428
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 53423.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "vendor/animsition.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 11815,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2716,
+								2716
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 577.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "vendor/script.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8706,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7839,
+								7839
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_name": "/**",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3143.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "plugins.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 134428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								134428
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_name": "! function(t) {",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 53213.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/components/FuelSavingsResults.spec.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1775,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								208,
+								208
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "src/components/FuelSavingsApp.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 94.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "asterixlab.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 279.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
