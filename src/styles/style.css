@@ -1607,31 +1607,31 @@ a {
 }
 
 .slide-big-1 {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
   background-color: #efefef;
-  background-image: url('../images/slide-big-1.jpg');
-  background-position: 50% 100%;
-  background-size: contain;
+  background-image: url('../images/background/mobile-slide.jpg');
+  background-position: 0% 100%;
+  background-size:cover; ;
   background-repeat: no-repeat;
 }
 
 .slide-big-2 {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
   background-color: #ff8686;
-  background-image: url('../images/slide-big-2.jpg');
-  background-position: 50% 100%;
+  background-image: url('../images/background/mac-screen.jpg');
+  background-position: 0% 100%;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .slide-big-3 {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 0px;
+  padding-left: 0px;
   background-color: #efefef;
-  background-image: url('../images/slide-big-4.jpg');
-  background-position: 50% 100%;
+  background-image: url('../images/background/coding.jpeg');
+  background-position: 0% 120%;
   background-size: contain;
   background-repeat: no-repeat;
 }

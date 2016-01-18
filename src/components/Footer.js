@@ -19,7 +19,7 @@ class Footer extends React.Component {
           <div>Asterix Lab Copyright &#9400; {currentYear}.&nbsp;ALL RIGHTS RESERVED.</div>
         </div>
       </div>
-    )
+    );
   }
 }
 

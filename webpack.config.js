@@ -35,14 +35,14 @@ var getLoaders = function(env) {
     { test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel', 'eslint'] },
     { test: /(\.css|\.scss)$/, include: path.join(__dirname, 'src'), loaders: ['style', 'css', 'sass'] },
     // React is necessary for the client rendering
-{ test: require.resolve('react'), loader: 'expose?React' },
-{ test: require.resolve('react-dom'), loader: 'expose?ReactDOM' },
-{ test: require.resolve('jquery'), loader: 'expose?jQuery' },
-{ test: require.resolve('jquery'), loader: 'expose?$' },
+    { test: require.resolve('react'), loader: 'expose?React' },
+    { test: require.resolve('react-dom'), loader: 'expose?ReactDOM' },
+    { test: require.resolve('jquery'), loader: 'expose?jQuery' },
+    { test: require.resolve('jquery'), loader: 'expose?$' },
     { test: /vendor\/.+\.(jsx|js)$/,loader: 'imports?jQuery=jquery,$=jquery,this=>window'},
     { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
     { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
-    { test: /\.(png|woff|woff2|eot|ttf|svg|gif|jpg|cur|otf)$/, loader: 'url-loader?limit=100000' }
+    { test: /\.(png|woff|woff2|eot|ttf|svg|gif|jpg|jpeg|cur|otf)$/, loader: 'url-loader?limit=100000' }
   ];
 
   return loaders;

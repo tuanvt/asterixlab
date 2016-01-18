@@ -14,8 +14,11 @@ import '../../vendor/script';
 
 import RoyalPreLoader from './RoyalPreLoader';
 import Header from './Header';
-import LeftBoder from './LeftBoder';
-import RightBoder from './RightBoder';
+import LeftBorder from './LeftBorder';
+import RightBorder from './RightBorder';
+import MainNavigation from './MainNavigation';
+import ResponsiveNagivation from './ResponsiveNagivation';
+import FeatureSection from './FeatureSection';
 
 import Footer from './Footer';
 
@@ -35,207 +38,12 @@ class LandingPage extends React.Component {
                 <RightBorder />
                 {/* BOTTOM BORDER */}
                 <Footer />
-                <div data-ix="hide-overlay-menu-on-load" className="overlay-menu">
-                  <div className="w-container port-contatiner">
-                    {/* NAVIGATION */}
-                    <nav>
-                      <ul className="w-list-unstyled ul-nav">
-                        <li data-ix="close-dropdown-on-hover"><a href="index.html" data-ix="show-dropdown-on-hover" className="w-inline-block nav-link animsition-link"><h3 className="biger">Home</h3></a>
-                        </li>
-                        <li data-ix="close-dropdown-on-hover"><a href="about.html" data-ix="show-dropdown-on-hover" className="w-inline-block nav-link animsition-link"><h3 className="biger">about</h3></a>
-                        </li>
-                        <li data-ix="close-dropdown-on-hover"><a href="#" data-ix="show-dropdown-on-hover" className="w-inline-block nav-link"><h3 className="biger">portfolio</h3></a>
-                          <ul data-ix="make-dropdown-height-0" className="w-list-unstyled ul-dropdown">
-                            <li>
-                              <a href="portfolio-classic-grid.html" className="w-inline-block nav-link nav-dd animsition-link">
-                                <div>Classic Grid</div>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="portfolio-masonry.html" className="w-inline-block nav-link nav-dd animsition-link">
-                                <div>Masonry</div>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="portfolio-not-spaced.html" className="w-inline-block nav-link nav-dd animsition-link">
-                                <div>Not spaced</div>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="portfolio-with-lightbox.html" className="w-inline-block nav-link nav-dd animsition-link">
-                                <div>With Lightbox</div>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="portfolio-hover-effects.html" className="w-inline-block nav-link nav-dd animsition-link">
-                                <div>Hover Effects</div>
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li data-ix="close-dropdown-on-hover"><a href="#" data-ix="show-dropdown-on-hover" className="w-inline-block nav-link"><h3 className="biger">blog</h3></a>
-                          <ul data-ix="make-dropdown-height-0" className="w-list-unstyled ul-dropdown">
-                            <li>
-                              <a href="blog-zig-zag.html" className="w-inline-block nav-link nav-dd animsition-link">
-                                <div>Blog&nbsp;Zig-Zag</div>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="blog-minimal.html" className="w-inline-block nav-link nav-dd animsition-link">
-                                <div>Blog&nbsp;Minimal</div>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="blog-grid.html" className="w-inline-block nav-link nav-dd animsition-link">
-                                <div>Blog&nbsp;Grid</div>
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li data-ix="close-dropdown-on-hover"><a href="contact.html" data-ix="show-dropdown-on-hover" className="w-inline-block nav-link animsition-link"><h3 className="biger">contact</h3></a>
-                        </li>
-                      </ul>
-                    </nav>
-                    {/* END NAVIGATION */}
-                  </div>
-                </div>
+                <MainNavigation />
                 {/* RESPONSIVE NAVIGATION */}
-                <div className="w-hidden-main">
-                  <div className="responsive-menu">
-                    <div className="w-container">
-                      <a href="index.html" className="w-inline-block brand-logo more-margin animsition-link"><img width={135} src="images/logo.png" alt="logo" />
-                      </a>
-                      <div data-ix="open-responsive-menu" className="hamburger">
-                        <div className="w-embed">
-                          <button className="c-hamburger c-hamburger--htx">
-                            <span>toggle menu</span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <nav className="responsive-nav">
-                    <div className="w-container">
-                      <ul className="w-list-unstyled dd-big-res">
-                        <li>
-                          <div className="w-clearfix nav-res-link"><a href="index.html" className="res-txt animsition-link">home</a>
-                          </div>
-                        </li>
-                        <li>
-                          <div className="w-clearfix nav-res-link"><a href="about.html" className="res-txt animsition-link">About</a>
-                          </div>
-                        </li>
-                        <li>
-                          <div data-ix="open-dd-res" className="w-clearfix nav-res-link"><a href="#" className="res-txt">portfolio</a>
-                            <a href="#" className="w-inline-block arrow-ico-res">
-                              <i className="fa fa-angle-down" />
-                            </a>
-                          </div>
-                          <ul className="w-list-unstyled dd-res">
-                            <li>
-                              <div className="w-clearfix nav-res-link">
-                                <a href="portfolio-classic-grid.html" className="res-txt change-size animsition-link">Classic Grid</a>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="w-clearfix nav-res-link">
-                                <a href="portfolio-masonry.html" className="res-txt change-size animsition-link">Masonry</a>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="w-clearfix nav-res-link">
-                                <a href="portfolio-not-spaced.html" className="res-txt change-size animsition-link">Not Spaced</a>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="w-clearfix nav-res-link">
-                                <a href="portfolio-with-lightbox.html" className="res-txt change-size animsition-link">With Lightbox</a>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="w-clearfix nav-res-link">
-                                <a href="portfolio-hover-effects.html" className="res-txt change-size animsition-link">Hover Effects</a>
-                              </div>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <div data-ix="open-dd-res" className="w-clearfix nav-res-link"><a href="#" className="res-txt">blog</a>
-                            <a href="#" className="w-inline-block arrow-ico-res">
-                              <i className="fa fa-angle-down" />
-                            </a>
-                          </div>
-                          <ul className="w-list-unstyled dd-res">
-                            <li>
-                              <div className="w-clearfix nav-res-link">
-                                <a href="blog-zig-zag.html" className="res-txt change-size animsition-link">Blog Zig-Zag</a>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="w-clearfix nav-res-link">
-                                <a href="blog-minimal.html" className="res-txt change-size animsition-link">Blog Minimal</a>
-                              </div>
-                            </li>
-                            <li>
-                              <div className="w-clearfix nav-res-link">
-                                <a href="blog-grid.html" className="res-txt change-size animsition-link">Blog Grid</a>
-                              </div>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <div className="w-clearfix nav-res-link"><a href="contact.html" className="res-txt animsition-link">Contact</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </nav>
-                </div>
+                <ResponsiveNagivation />
                 {/* END RESPONSIVE NAVIGATION */}
                 {/* SECTION 1 */}
-                <div className="w-section section-imp no-padding">
-                  <div className="banner">
-                    <div data-animation="fade" data-duration={500} data-infinite={1} data-nav-spacing={5} className="w-slider big-slider">
-                      <div className="w-slider-mask">
-                        <div className="arrow-down">
-                          <a href="#coming" className="w-inline-block icon-scroll" />
-                        </div>
-                        <div className="w-slide slide-big-1">
-                          <div className="w-container port-contatiner">
-                            <div className="center-mobile">
-                              <div data-ix="move-up-on-slide" className="inner-title smaller dark">dark fashion</div>
-                              <p data-ix="move-up-on-slide-2">Fashion Photography</p>
-                              <div data-ix="fade-in-on-slide-3"><img src="images/sub-handmade.png" alt="subhand" />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="w-slide slide-big-2">
-                          <div className="w-container port-contatiner top">
-                            <div className="align-center">
-                              <div data-ix="move-left-on-slide-4" className="inner-title smaller">milano watch</div>
-                              <p data-ix="move-left-on-slide-5" className="white">Digital Art</p>
-                              <div data-ix="fade-in-on-slide-4"><img src="images/sub-handmade-w.png" alt="subhand" />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="w-slide slide-big-3">
-                          <div className="w-container port-contatiner right">
-                            <div className="center-mobile">
-                              <div data-ix="move-up-on-slide" className="inner-title smaller dark">inside jungle</div>
-                              <p data-ix="move-up-on-slide-2">Photography</p>
-                              <div data-ix="fade-in-on-slide-3"><img src="images/sub-handmade.png" alt="subhand" />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="w-slider-arrow-left left-arrow" />
-                      <div className="w-slider-arrow-right right-arrow" />
-                    </div>
-                  </div>
-                </div>
+                <FeatureSection />
                 {/* END SECTION 1 */}
                 {/* SECTION 2 */}
                 <div id="filter" className="w-section section-imp">
