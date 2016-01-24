@@ -51,6 +51,12 @@ body {
   line-height: 20px;
   font-weight: 600;
 }
+.body-container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+}
 
 /* 1-1. Headings */
 h1 {
@@ -666,7 +672,7 @@ a {
 .inner-title {
   margin-bottom: 0px;
   color: white;
-  font-size: 58px;
+  font-size: 40px;
   line-height: 80px;
   letter-spacing: 8px;
 }
@@ -1311,7 +1317,7 @@ a {
   right: 0px;
   bottom: 0px;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(4, 4, 4, 0.5);
 }
 
 .video-overlay.more-darker {
@@ -1473,7 +1479,7 @@ a {
   margin-bottom: 15px;
   font-family: Lekton, sans-serif;
   color: #a8a8a8;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 25px;
   font-weight: 400;
   letter-spacing: 0px;
@@ -1619,9 +1625,10 @@ a {
 .slide-big-2 {
   padding-right: 0px;
   padding-left: 0px;
+
   background-color: #ff8686;
   background-image: url('../images/background/mac-screen.jpg');
-  background-position: 0% 100%;
+  background-position: 36% 100%;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -1632,7 +1639,7 @@ a {
   background-color: #efefef;
   background-image: url('../images/background/coding.jpeg');
   background-position: 0% 120%;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -1737,8 +1744,8 @@ a {
 
 .port-contatiner {
   position: relative;
-  left: 0px;
-  top: 50%;
+  left: 40px;
+  top: 40%;
   right: 0px;
   z-index: 10;
   -webkit-transform: translate(0px, -50%);
@@ -1751,7 +1758,7 @@ a {
 }
 
 .port-contatiner.top {
-  top: 40%;
+  top: 20%;
 }
 
 .typed-cursor{

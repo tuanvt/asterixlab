@@ -28,7 +28,7 @@ $(document).ready(function() { "use strict";
 
   $(window).resize(resize)
   resize()
-
+  videoTag.playbackRate =0.5;
   function resize() {
     var width = outerDiv.width()
     var height = outerDiv.height()
@@ -50,6 +50,8 @@ $(document).ready(function() { "use strict";
       top: y,
       left: x
     })
+
+
   }
   return false;
 });
@@ -71,11 +73,11 @@ $(document).ready(function() { "use strict";
 
    $(function(){ "use strict";
         $(".element, .element-border").typed({
-          strings: ["awesome", "inspired", "incredible", "classy", "great", "proffesional", "popular"],
-          typeSpeed: 250, // typing speed
+          strings: ["awesome", "inspiring", "user friendly", "classy", "table", "proffesional", "popular"],
+          typeSpeed: 400, // typing speed
           backDelay: 500, // pause before backspacing
-          loop: false, // loop on or off (true or false)
-          loopCount: false, // number of loops, false = infinite
+          loop: true, // loop on or off (true or false)
+          loopCount: 10, // number of loops, false = infinite
         });
 		return false;
     });
