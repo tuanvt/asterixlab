@@ -13,8 +13,10 @@ var bundler = webpack(webpackConfig);
 
 // Run Browsersync and use middleware for Hot Module Replacement
 browserSync({
+  ghostMode: false,
   server: {
     baseDir: 'src',
+
 
     middleware: [
       webpackDevMiddleware(bundler, {

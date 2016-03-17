@@ -20,7 +20,10 @@ import MainNavigation from './MainNavigation';
 import ResponsiveNagivation from './ResponsiveNagivation';
 import FeatureSection from './FeatureSection';
 import PortfolioSection from './PortfolioSection';
-
+import ServiceSection from './ServiceSection';
+import ClientSection from './ClientSection';
+import OurTeamSection from './OurTeamSection';
+import ContactUsSection from './ContactUsSection';
 import Footer from './Footer';
 
 class LandingPage extends React.Component {
@@ -29,7 +32,7 @@ class LandingPage extends React.Component {
     }
   render () {
     return (
-            <div className="body-container">
+            <div className="body-container w-clearfix ">
                 {/* ROYAL PRELOADER */}
                 <RoyalPreLoader />
                 {/* TOP BORDER */}
@@ -49,43 +52,15 @@ class LandingPage extends React.Component {
                 {/* SECTION 2 */}
                 <PortfolioSection />
                 {/* END SECTION 2 */}
+                <ServiceSection />
+
                 {/* SECTION 3 */}
-                <div className="w-section section-imp dark-gray more-padding">
-                  <div className="w-container">
-                    <div className="title-wrapper">
-                      <h2>Clients</h2>
-                      <div><img src="images/sub-handmade.png" alt="handmade" />
-                      </div>
-                    </div>
-                    <div className="w-row">
-                      <div className="w-col w-col-2 w-clearfix">
-                        <a href="#" className="w-inline-block logo-wrapper wow fadeIn" data-wow-delay="0.3s"><img width={147} src="images/logo-1.png" alt="logo-1" />
-                        </a>
-                      </div>
-                      <div className="w-col w-col-2 w-clearfix">
-                        <a href="#" className="w-inline-block logo-wrapper wow fadeIn" data-wow-delay="0.4s"><img width={147} src="images/logo-4.png" alt="logo-4" />
-                        </a>
-                      </div>
-                      <div className="w-col w-col-2 w-clearfix">
-                        <a href="#" className="w-inline-block logo-wrapper wow fadeIn" data-wow-delay="0.5s"><img width={147} src="images/logo-2.png" alt="logo-2" />
-                        </a>
-                      </div>
-                      <div className="w-col w-col-2 w-clearfix">
-                        <a href="#" className="w-inline-block logo-wrapper wow fadeIn" data-wow-delay="0.6s"><img width={147} src="images/logo-5.png" alt="logo-5" />
-                        </a>
-                      </div>
-                      <div className="w-col w-col-2 w-clearfix">
-                        <a href="#" className="w-inline-block logo-wrapper wow fadeIn" data-wow-delay="0.7s"><img width={147} src="images/logo-3.png" alt="logo-3" />
-                        </a>
-                      </div>
-                      <div className="w-col w-col-2 w-clearfix">
-                        <a href="#" className="w-inline-block logo-wrapper wow fadeIn" data-wow-delay="0.8s"><img width={147} src="images/logo-6.png" alt="logo-6" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* END SECTION 3 */}
+                <ClientSection />
+                {/* END SECTION 3
+                <OurTeamSection />*/}
+                {/* CONTACT US */}
+                <ContactUsSection />
+                {/* END CONTACT US SECTION */}
                 {/* FOOTER */}
                 <footer className="footer">
                   <div className="w-container">
@@ -96,7 +71,7 @@ class LandingPage extends React.Component {
                             <i className="icon-basic-headset" />
                           </div>
                           <div className="cont-sub-txt">Phone</div>
-                          <p>+1 046 244 3912</p>
+                          <p>+84 904758879</p>
                         </div>
                       </div>
                       <div className="w-col w-col-4">
@@ -105,8 +80,8 @@ class LandingPage extends React.Component {
                             <i className="icon-basic-geolocalize-05" />
                           </div>
                           <div className="cont-sub-txt">Address</div>
-                          <p>285 Lexington Ave
-                            <br />New York, NY 12001</p>
+                            <p> House 15, Alley 76 To Ngoc Van Tay Ho District
+                            <br />Hanoi, Vietnam </p>
                         </div>
                       </div>
                       <div className="w-col w-col-4">
@@ -115,7 +90,7 @@ class LandingPage extends React.Component {
                             <i className="icon-basic-mail-open-text" />
                           </div>
                           <div className="cont-sub-txt">E-mail</div>
-                          <p><a className="mail" href="mailto:">mail@milano.com</a>
+                          <p><a className="mail" href="mailto:info@asterixlab.com">info@asterixlab.com</a>
                           </p>
                         </div>
                       </div>

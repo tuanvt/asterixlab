@@ -13,7 +13,7 @@ class Header extends React.Component {
               <div className="top-border">
                 <div className="w-row">
                   <div className="w-col w-col-6 w-clearfix">
-                    <a href="index.html" className="w-inline-block brand-logo animsition-link">
+                    <a href="#intro" className="w-inline-block brand-logo animsition-link">
                       {/*<svg id="logo" className="Animate-Path" width="45px" height="40px" viewBox="0 -34 160 250" xmlSpace="preserve">
                         <use id="draw-text" className="animate-draw" xlinkHref="#logo-text" />
                       </svg>

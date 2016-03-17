@@ -26,7 +26,7 @@ class FeatureSection extends React.Component {
         <div className="w-container container-contact">
          <div className="align-center">
            <h1 className="inner-title">WE make <span className="element">CREATIVE</span> Apps</h1>
-           <p className="sub-text-title">Let's get started in crafting your mobile or web apps!</p>
+           <p className="sub-text-title">Let&#39;s get started in crafting your mobile or web apps!</p>
            <div><img src="images/sub-handmade-c.png" alt="handmade"/>
            </div>
          </div>
