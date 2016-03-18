@@ -11,8 +11,8 @@ class Footer extends React.Component {
   }
 
   render () {
-    var currentdate = new Date();
-    var currentYear = currentdate.getFullYear() ;
+    let currentdate = new Date();
+    let currentYear = currentdate.getFullYear() ;
     return (
       <div className="bottom-border">
         <div className="w-hidden-medium w-hidden-small w-hidden-tiny title-top-border">

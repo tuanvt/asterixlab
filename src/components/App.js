@@ -4,7 +4,7 @@ import LandingPage from './LandingPage';
 
 const App = (props) => {
   return (
-    <div>
+    <div className="body-container w-clearfix ">
       {props.children}
     </div>
   );

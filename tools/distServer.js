@@ -6,6 +6,7 @@ import historyApiFallback from 'connect-history-api-fallback';
 
 // Run Browsersync
 browserSync({
+  ghostMode: false,
   port: 3000,
   ui: {
     port: 3001
