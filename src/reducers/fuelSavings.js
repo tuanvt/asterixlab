@@ -1,6 +1,7 @@
 import {SAVE_FUEL_SAVINGS, CALCULATE_FUEL_SAVINGS} from '../constants/ActionTypes';
 import calculator from '../businessLogic/fuelSavingsCalculator';
 import dateHelper from '../businessLogic/dateHelper';
+import objectAssign from 'object-assign';
 
 const initialState = {
     newMpg: null,
@@ -27,21 +28,24 @@ const initialState = {
 export default function fuelSavingsAppState(state = initialState, action) {
 	switch (action.type) {
 		case SAVE_FUEL_SAVINGS:
-			//in a real app we'd trigger an AJAX call here. For this example, just simulating a save by changing date modified.
-			return Object.assign({}, state, { dateModified: dateHelper.getFormattedDateTime(new Date()) });
+      // For this example, just simulating a save by changing date modified.
+      // In a real app using Redux, you might use redux-thunk and handle the async call in fuelSavingsActions.js
+			return objectAssign({}, state, { dateModified: dateHelper.getFormattedDateTime(new Date()) });
 
 		case CALCULATE_FUEL_SAVINGS:
-			let newState = Object.assign({}, state);
-			newState[action.fieldName] = action.value;
-			let calc = calculator();
-			newState.necessaryDataIsProvidedToCalculateSavings = calc.necessaryDataIsProvidedToCalculateSavings(newState);
-			newState.dateModified = dateHelper.getFormattedDateTime(new Date());
+    { // limit scope with this code block, to satisfy eslint no-case-declarations rule.
+      let newState = objectAssign({}, state);
+      newState[action.fieldName] = action.value;
+      let calc = calculator();
+      newState.necessaryDataIsProvidedToCalculateSavings = calc.necessaryDataIsProvidedToCalculateSavings(newState);
+      newState.dateModified = dateHelper.getFormattedDateTime(new Date());
 
-			if (newState.necessaryDataIsProvidedToCalculateSavings) {
-				newState.savings = calc.calculateSavings(newState);
-			}
+      if (newState.necessaryDataIsProvidedToCalculateSavings) {
+        newState.savings = calc.calculateSavings(newState);
+      }
 
-			return newState;
+      return newState;
+    }
 
 		default:
 			return state;
