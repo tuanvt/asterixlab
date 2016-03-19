@@ -47,7 +47,6 @@ $(document).ready(function() { "use strict";
     videoTag.css({
       width: w,
       height: h,
-      top: y,
       left: x
     })
 
