@@ -10,10 +10,6 @@ var peoplegaugeImage = require("../images/portfolios/peoplegauge.png");
 var restaurantImage = require("../images/portfolios/restaurant.png");
 var shineImage = require("../images/portfolios/shine2.jpg");
 
-
-
-
-
 class PortfolioSection extends React.Component {
 
   render() {
