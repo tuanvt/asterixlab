@@ -1,4 +1,5 @@
 import React from 'react';
+import { SUBHAND_IMAGE } from './FeatureSection';
 
 class ContactUsSection extends React.Component {
   constructor(props) {
@@ -17,7 +18,7 @@ class ContactUsSection extends React.Component {
             <div className="title-wrapper">
               <h2>contact us</h2>
               <div className="sub-text-title">We&#39;d love to hear from you.</div>
-              <div><img src="images/sub-handmade.png" alt="handmade" />
+              <div><img src={SUBHAND_IMAGE} alt="handmade" />
               </div>
             </div>
             <div>

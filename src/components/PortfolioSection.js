@@ -1,4 +1,18 @@
 import React from 'react';
+import { SUBHAND_IMAGE } from './FeatureSection';
+
+var echoesImage = require("../images/portfolios/echoes.jpg");
+var fundstartImage = require("../images/portfolios/fundstart2.jpg");
+var gerocImage = require("../images/portfolios/geroc2.jpeg");
+var moballImage = require("../images/portfolios/moball.tv.png");
+var otoxemayImage = require("../images/portfolios/otoxemay.jpg");
+var peoplegaugeImage = require("../images/portfolios/peoplegauge.png");
+var restaurantImage = require("../images/portfolios/restaurant.png");
+var shineImage = require("../images/portfolios/shine2.jpg");
+
+
+
+
 
 class PortfolioSection extends React.Component {
 
@@ -8,7 +22,7 @@ class PortfolioSection extends React.Component {
         <div className="w-container">
           <div className="title-wrapper">
             <h2>our projects</h2>
-            <div><img src="images/sub-handmade.png" alt="handmade" />
+            <div><img src={SUBHAND_IMAGE} alt="handmade" />
             </div>
           </div>
           <div className="w-clearfix filter-cont">
@@ -33,7 +47,7 @@ class PortfolioSection extends React.Component {
           <div id="grid" className="w-clearfix grid">
             <div className="grid-sizer" />
             <div className="item ios android">
-              <div data-ix="hover-portfolio-content" className="portfolio-overlay wow fadeInUp"><img src="images/portfolios/echoes.jpg" alt="p7" />
+              <div data-ix="hover-portfolio-content" className="portfolio-overlay wow fadeInUp"><img src={echoesImage} alt="p7" />
                 <a href="#" data-ix="hide-portfolio-content-on-load" className="w-inline-block portfolio-content">
                   <div className="portfolio-cn-title">
                     <h4 data-ix="scale-portfolio-title-on-load" className="portfolio-title">Echoes App</h4>
@@ -43,7 +57,7 @@ class PortfolioSection extends React.Component {
               </div>
             </div>
             <div className="item ios web ">
-              <div data-ix="hover-portfolio-content" className="portfolio-overlay wow fadeInUp"><img src="images/portfolios/shine2.jpg" alt="p3" />
+              <div data-ix="hover-portfolio-content" className="portfolio-overlay wow fadeInUp"><img src={shineImage} alt="p3" />
                 <a href="#" data-ix="hide-portfolio-content-on-load" className="w-inline-block portfolio-content">
                   <div className="portfolio-cn-title">
                     <h4 data-ix="scale-portfolio-title-on-load" className="portfolio-title">Shine Asbetos</h4>
@@ -53,7 +67,7 @@ class PortfolioSection extends React.Component {
               </div>
             </div>
             <div className="item web">
-              <div data-ix="hover-portfolio-content" className="portfolio-overlay wow fadeInUp"><img src="images/portfolios/otoxemay.jpg" alt="p8" />
+              <div data-ix="hover-portfolio-content" className="portfolio-overlay wow fadeInUp"><img src={otoxemayImage} alt="p8" />
                 <a href="#" data-ix="hide-portfolio-content-on-load" className="w-inline-block portfolio-content">
                   <div className="portfolio-cn-title">
                     <h4 data-ix="scale-portfolio-title-on-load" className="portfolio-title">Otoxemay.vn</h4>
@@ -63,7 +77,7 @@ class PortfolioSection extends React.Component {
               </div>
             </div>
             <div className="item web">
-              <div data-ix="hover-portfolio-content" className="portfolio-overlay wow fadeInUp"><img src="images/portfolios/geroc3.jpg" alt="p1" />
+              <div data-ix="hover-portfolio-content" className="portfolio-overlay wow fadeInUp"><img src={gerocImage} alt="p1" />
                 <a href="#" data-ix="hide-portfolio-content-on-load" className="w-inline-block portfolio-content">
                   <div className="portfolio-cn-title">
                     <h4 data-ix="scale-portfolio-title-on-load" className="portfolio-title">Geroc Travel</h4>
@@ -73,7 +87,7 @@ class PortfolioSection extends React.Component {
               </div>
             </div>
             <div className="item web ">
-              <div data-ix="hover-portfolio-content" className="portfolio-overlay wow fadeInUp"><img src="images/portfolios/peoplegauge.png" alt="p1-c" />
+              <div data-ix="hover-portfolio-content" className="portfolio-overlay wow fadeInUp"><img src={peoplegaugeImage} alt="p1-c" />
                 <a href="#" data-ix="hide-portfolio-content-on-load" className="w-inline-block portfolio-content">
                   <div className="portfolio-cn-title">
                     <h4 data-ix="scale-portfolio-title-on-load" className="portfolio-title">People Gauge</h4>
@@ -83,7 +97,7 @@ class PortfolioSection extends React.Component {
               </div>
             </div>
             <div className="item web">
-              <div data-ix="hover-portfolio-content" className="portfolio-overlay wow fadeInUp"><img src="images/portfolios/fundstart2.jpg" alt="p11" />
+              <div data-ix="hover-portfolio-content" className="portfolio-overlay wow fadeInUp"><img src={fundstartImage} alt="p11" />
                 <a href="#" data-ix="hide-portfolio-content-on-load" className="w-inline-block portfolio-content">
                   <div className="portfolio-cn-title">
                     <h4 data-ix="scale-portfolio-title-on-load" className="portfolio-title">Fundstart.vn</h4>
@@ -113,7 +127,7 @@ class PortfolioSection extends React.Component {
               </div>
             </div>
             <div className="item web ios android">
-              <div data-ix="hover-portfolio-content" className="portfolio-overlay wow fadeInUp"><img src="../images/portfolios/moball.tv.png" alt="p4" />
+              <div data-ix="hover-portfolio-content" className="portfolio-overlay wow fadeInUp"><img src={moballImage} alt="p4" />
                 <a href="#" data-ix="hide-portfolio-content-on-load" className="w-inline-block portfolio-content">
                   <div className="portfolio-cn-title">
                     <h4 data-ix="scale-portfolio-title-on-load" className="portfolio-title">Moball tv</h4>

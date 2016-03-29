@@ -50,13 +50,13 @@ const getEntry = function (env) {
 
 const getLoaders = function (env) {
   const loaders = [{ test: /\.js$/, include: path.join(__dirname, 'src'), loaders: ['babel', 'eslint'] },
-                   { test: /\.(jpe?g|png|gif|svg)$/i, loaders: ['file']},
+                   { test: /\.(jpe?g|png|gif|svg|cur|otf|mp4|webm|ogv)$/i, loaders: ['file-loader']},
+                   { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
+                   { test: /\.(ttf|eot|svg|)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
                    { test: require.resolve('jquery'), loader: 'expose?jQuery' },
-      { test: require.resolve('jquery'), loader: 'expose?$' },
-      { test: /vendor\/.+\.(jsx|js)$/,loader: 'imports?jQuery=jquery,$=jquery,this=>window'},
-      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff" },
-      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader" },
-      { test: /\.(png|woff|woff2|eot|ttf|svg|gif|jpg|jpeg|cur|otf)$/, loader: 'url-loader?limit=100000' }];
+                   { test: require.resolve('jquery'), loader: 'expose?$' },
+                   { test: /vendor\/.+\.(jsx|js)$/,loader: 'imports?jQuery=jquery,$=jquery,this=>window'}
+                 ];
 
   if (env === productionEnvironment ) {
     // generate separate physical stylesheet for production build using ExtractTextPlugin. This provides separate caching and avoids a flash of unstyled content on load.
@@ -77,7 +77,7 @@ function getConfig(env) {
     target: env === testEnvironment ? 'node' : 'web', // necessary per https://webpack.github.io/docs/testing.html#compile-and-test
     output: {
       path: __dirname + '/dist', // Note: Physical files are only output by the production build task `npm run build`.
-      publicPath: '',
+      publicPath: '/',
       filename: 'bundle.js'
     },
     plugins: getPlugins(env),

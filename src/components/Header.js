@@ -1,5 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
+var logoImage = require('../images/logo.png');
 
 class Header extends React.Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class Header extends React.Component {
                         <use id="draw-text" className="animate-draw" xlinkHref="#logo-text" />
                       </svg>
                       */}
-                      <img width={165} src="images/logo.png" alt="logo" />
+                      <img width={165} src={logoImage} alt="logo" />
                     </a>
                     {/*
                     <svg id="logo-defs" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">

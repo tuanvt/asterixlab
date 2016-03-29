@@ -1,4 +1,5 @@
 import React from 'react';
+import { SUBHAND_IMAGE } from './FeatureSection';
 
 class ServiceSection extends React.Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class ServiceSection extends React.Component {
         <div className="w-container">
           <div className="title-wrapper">
             <h2>Our Services</h2>
-            <div><img src="images/sub-handmade.png" alt="handmade" />
+            <div><img src={SUBHAND_IMAGE} alt="handmade" />
             </div>
           </div>
           <div>
